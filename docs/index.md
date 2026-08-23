@@ -20,7 +20,6 @@ This ruleset implements the HarnMaster 3rd Edition rules (with 3.5 customization
 
 * [📖 **User Manual**](user-manual.md) — Comprehensive guide on character sheets, making rolls, combat flow, and GM tools.
 * [⚔️ **Combat System Deep-Dive**](combat-system.md) — Technical breakdown of the attack sequence, defense reactions, the resolution matrix, and injury processing.
-* [🛠️ **Developer Guide**](developer-guide.md) — Architecture overview, project layout, global script managers, and UI templates.
 
 ---
 
