@@ -27,10 +27,6 @@
    - [NPCs](#npcs)
    - [Encounters](#encounters)
    - [GM Options](#gm-options)
-6. [Reference](#reference)
-   - [Attribute Quick Reference](#attribute-quick-reference)
-   - [Skill Groups](#skill-groups)
-   - [Damage Types](#damage-types)
 
 ---
 
@@ -384,50 +380,3 @@ Under **Settings → Options → HarnMaster Rules**:
 | **Combat: Limb injuries** | Tracks unusable limb conditions |
 | **Combat: Amputations** | Enables amputation outcomes on grievous limb wounds |
 | **Combat: Bleeders** | Adds blood-loss tracking for severe wounds |
-
----
-
-## Reference
-
-### Attribute Quick Reference
-
-| Abbr. | Full Name | Primary Uses |
-|---|---|---|
-| **AGL** | Agility | Physical skills, dodge, initiative |
-| **AUR** | Aura | Convocation magic, piety |
-| **CML** | Comeliness | Social interactions |
-| **DEX** | Dexterity | Fine motor skills, craft |
-| **END** | Endurance | Fatigue resistance, condition |
-| **EYE** | Eyesight | Awareness, ranged combat |
-| **HRG** | Hearing | Awareness |
-| **INT** | Intelligence | Lore, languages, mental skills |
-| **MOR** | Morality | Piety, religion skills |
-| **MOV** | Move | Speed, travel rate |
-| **SML** | Smell | Awareness |
-| **STA** | Stamina | Health, shock resistance |
-| **STR** | Strength | Melee damage, carry weight |
-| **VOI** | Voice | Communication skills |
-| **WIL** | Will | Mental conflict, magic resistance |
-
-### Skill Groups
-
-| Group | Example Skills |
-|---|---|
-| **Physical** | Acrobatics, Climbing, Dodge, Stealth, Swimming |
-| **Communication** | Acting, Intrigue, Oratory, Rhetoric, Singing |
-| **Language** | Harnic, Ivinian, Jarinese, Orbaalese, and 20+ others |
-| **Religion** | Piety skills per deity |
-| **Combat** | Axe, Bow, Dagger, Shield, Sword, Unarmed |
-| **Crafts & Lore** | Cookery, Drawing, Fishing, Folklore, Physician |
-| **Convocation** | Fyvria, Jmorvi, Lyahvi, Odivshe, Peleahn, Savorya |
-| **Generic** | Miscellaneous custom skills |
-
-### Damage Types
-
-| Code | Full Name | Injury Labels (Minor / Serious / Grievous) |
-|---|---|---|
-| **B** | Blunt | Bruised / Fractured / Crushed |
-| **E** | Edge | Minor Cut / Serious Cut / Grievous Cut |
-| **P** | Point | Minor Stab / Serious Stab / Grievous Stab |
-| **F** | Fire | Minor Burn / Serious Burn / Grievous Burn |
-| *(Frost)* | Frost | Minor Frost / Serious Frost / Grievous Frost |
