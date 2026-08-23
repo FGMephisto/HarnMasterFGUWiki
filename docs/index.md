@@ -19,7 +19,7 @@ This ruleset implements the HarnMaster 3rd Edition rules (with 3.5 customization
 ## Documentation Quick Links
 
 * [📖 **User Manual**](user-manual.md) — Comprehensive guide on character sheets, making rolls, combat flow, and GM tools.
-* [⚔️ **Combat System Deep-Dive**](combat-system.md) — Technical breakdown of the attack sequence, defense reactions, the resolution matrix, and injury processing.
+* [⚔️ **Combat Resolution Utility**](combat-resolution.md) — Step-by-step guide to using the interactive Combat Resolution Window (CRW), hit location overrides, and damage application.
 
 ---
 
