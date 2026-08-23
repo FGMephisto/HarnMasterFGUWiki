@@ -5,13 +5,13 @@
 1. [Introduction](#introduction)
 2. [The Character Sheet](#the-character-sheet)
    - [Skills Tab](#skills-tab)
-   - [Mystic Tab — Magic & Powers](#mystic-tab--magic--powers)
+   - [Mystic Tab — Magic & Powers](#mystic-tab-magic-powers)
    - [Inventory Tab](#inventory-tab)
-   - [Combat Tab — Armor & Penalties](#combat-tab--armor--penalties)
-   - [Combat Tab — Injuries](#combat-tab--injuries)
-   - [Combat Tab — Strike Locations](#combat-tab--strike-locations)
-   - [Actions Tab — Weapons](#actions-tab--weapons)
-   - [GM Tab — Background](#gm-tab--background)
+   - [Combat Tab — Armor & Penalties](#combat-tab-armor-penalties)
+   - [Combat Tab — Injuries](#combat-tab-injuries)
+   - [Combat Tab — Strike Locations](#combat-tab-strike-locations)
+   - [Actions Tab — Weapons](#actions-tab-weapons)
+   - [GM Tab — Background](#gm-tab-background)
 3. [Making Rolls](#making-rolls)
 4. [Combat](#combat)
    - [Initiative](#initiative)
@@ -53,7 +53,7 @@ The character sheet has six tabs:
 
 ---
 
-### Skills Tab — Attributes
+### Skills Tab — Attributes {#skills-tab-attributes}
 
 The top portion of the Skills tab always shows the character's fifteen attributes in a compact grid.
 
@@ -70,7 +70,7 @@ The top portion of the Skills tab always shows the character's fifteen attribute
 
 ---
 
-### Skills Tab
+### Skills Tab {#skills-tab}
 
 Below the attributes, the same tab shows the character's skill list in compact form.
 
@@ -104,7 +104,7 @@ The detailed window also has a **Development Roll** button per row (the dice ico
 
 ---
 
-### Mystic Tab — Magic & Powers
+### Mystic Tab — Magic & Powers {#mystic-tab-magic-powers}
 
 **This is still under development**
 
@@ -133,7 +133,7 @@ Click a spell to cast it (rolls the appropriate convocation skill). Fatigue cost
 
 ---
 
-### Inventory Tab
+### Inventory Tab {#inventory-tab}
 
 The Inventory tab lists all items carried. Key columns:
 - **WT** — item weight
@@ -144,19 +144,19 @@ Drag an item into the list to add it. Check the **Equipped** box to mark worn ar
 
 ---
 
-### Combat Tab — Armor & Penalties
+### Combat Tab — Armor & Penalties {#combat-tab-armor-penalties}
 
 The Combat tab summarizes three things:
 
-**Strike location armor** — the strike location table showing B/E/P/F protection values per body location. See [Combat Tab — Strike Locations](#combat-tab--strike-locations) below for the full reference.
+**Strike location armor** — the strike location table showing B/E/P/F protection values per body location. See [Combat Tab — Strike Locations](#combat-tab-strike-locations) below for the full reference.
 
 **Penalties list** — a summary of active injury penalties feeding into Universal Penalty and Physical Penalty on the main tab.
 
-**Injury list** — all current injuries. See [Combat Tab — Injuries](#combat-tab--injuries) below for the full field reference.
+**Injury list** — all current injuries. See [Combat Tab — Injuries](#combat-tab-injuries) below for the full field reference.
 
 ---
 
-### Combat Tab — Injuries
+### Combat Tab — Injuries {#combat-tab-injuries}
 
 Injuries are listed as a sub-panel on the Combat tab. Click the **Details** button on any injury row to open a popup window with the full injury record. Each injury row records:
 
@@ -183,7 +183,7 @@ Penalties update automatically as injuries are added, removed, or healed. The **
 
 ---
 
-### Combat Tab — Strike Locations
+### Combat Tab — Strike Locations {#combat-tab-strike-locations}
 
 This tab shows the character's body map — all named strike locations with their armor values.
 
@@ -196,7 +196,7 @@ During combat resolution, the system rolls on this table (or a High/Low sub-tabl
 
 ---
 
-### Actions Tab — Weapons
+### Actions Tab — Weapons {#actions-tab-weapons}
 
 The Actions tab is the primary interface for combat. Each weapon entry shows its attack and defense actions.
 
@@ -239,7 +239,7 @@ Right-click in the weapon list and choose:
 
 ---
 
-### GM Tab — Background
+### GM Tab — Background {#gm-tab-background}
 
 The GM tab is visible only to the GM and contains biographical information:
 - Birthdate, Sunsign, Sunsign (Cusp)
