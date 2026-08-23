@@ -87,14 +87,17 @@ When the matrix indicates a successful hit, this panel calculates injury severit
 
 ---
 
-## 3. Hit Location Grid & Face Sub-Table
+## 3. Hit Location Grid, Lateral Side Selector & Face Sub-Table
 
 The window includes an interactive body location picker:
 
 * **Automated Roll Selection**: The location determined by the attack roll is automatically highlighted in red.
 * **Manual Override**: The GM can click any location button (e.g., *Skull*, *Thorax*, *Forearm*, *Thigh*) to change the targeted location on the fly; the effective impact and armor values recalculate immediately.
-* **Face Sub-Location Grid**: If the struck location is **Face**, a secondary grid appears allowing granular targeting for:
-    * *Eye*, *Cheek*, *Nose*, *Mouth*, *Jaw*, or *Ear*.
+* **Lateral Side Selection Grid (Left / Right)**: Whenever a lateral location is struck (e.g. *Shoulder*, *Arm*, *Elbow*, *Forearm*, *Hand*, *Thigh*, *Knee*, *Calf*, *Foot*), a secondary side grid dynamically appears below the hit location table:
+    * **Automated Highlight**: Automatically highlights the side determined by the roll (odd roll = Left, even roll = Right).
+    * **Interactive Switching**: Clicking **Left** or **Right** updates the wound location, worn armor calculation, and injury stats immediately.
+* **Face Sub-Location Grid**: If the struck location is **Face**, a secondary sub-grid appears allowing granular targeting for:
+    * *Eye*, *Cheek*, *Nose*, *Mouth*, *Jaw*, or *Ear* (with the lateral side selector appearing if *Eye* or *Ear* is chosen).
 
 ---
 
