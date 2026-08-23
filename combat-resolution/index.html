@@ -12,7 +12,7 @@
         <meta name="author" content="Mephisto">
       
       
-        <link rel="canonical" href="https://fgmephisto.github.io/HarnMasterPublic/combat-system/">
+        <link rel="canonical" href="https://fgmephisto.github.io/HarnMasterPublic/combat-resolution/">
       
       
         <link rel="prev" href="../user-manual/">
@@ -27,7 +27,7 @@
     
     
       
-        <title>Combat System - HarnMaster 3.5E Ruleset Documentation</title>
+        <title>Combat Resolution Utility - HarnMaster 3.5E Ruleset Documentation</title>
       
     
     
@@ -78,7 +78,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#combat-system" class="md-skip">
+        <a href="#combat-resolution-utility" class="md-skip">
           Skip to content
         </a>
       
@@ -112,7 +112,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Combat System
+              Combat Resolution Utility
             
           </span>
         </div>
@@ -259,7 +259,7 @@
   
     
   
-  Combat System
+  Combat Resolution Utility
 
       </a>
     </li>
@@ -376,7 +376,7 @@
   <span class="md-ellipsis">
     
   
-    Combat System
+    Combat Resolution Utility
   
 
     
@@ -394,7 +394,7 @@
   <span class="md-ellipsis">
     
   
-    Combat System
+    Combat Resolution Utility
   
 
     
@@ -420,10 +420,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#1-attack-sequence" class="md-nav__link">
+  <a href="#overview-workflow" class="md-nav__link">
     <span class="md-ellipsis">
       
-        1. Attack Sequence
+        Overview &amp; Workflow
       
     </span>
   </a>
@@ -431,10 +431,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#2-defense-sequence" class="md-nav__link">
+  <a href="#window-interface-breakdown" class="md-nav__link">
     <span class="md-ellipsis">
       
-        2. Defense Sequence
+        Window Interface Breakdown
       
     </span>
   </a>
@@ -442,10 +442,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#3-combat-resolution-the-matrix" class="md-nav__link">
+  <a href="#1-roll-results-panel" class="md-nav__link">
     <span class="md-ellipsis">
       
-        3. Combat Resolution (The Matrix)
+        1. Roll Results Panel
       
     </span>
   </a>
@@ -453,10 +453,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#4-damage-injury-application" class="md-nav__link">
+  <a href="#2-damage-injury-calculation-panel" class="md-nav__link">
     <span class="md-ellipsis">
       
-        4. Damage &amp; Injury Application
+        2. Damage &amp; Injury Calculation Panel
       
     </span>
   </a>
@@ -464,10 +464,43 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#architecture-flowchart" class="md-nav__link">
+  <a href="#3-hit-location-grid-face-sub-table" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Architecture Flowchart
+        3. Hit Location Grid &amp; Face Sub-Table
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-npc-defender-actions-panel" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. NPC Defender Actions Panel
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-applying-the-result" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Applying the Result
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#counterstrike-handling" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Counterstrike Handling
       
     </span>
   </a>
@@ -509,10 +542,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#1-attack-sequence" class="md-nav__link">
+  <a href="#overview-workflow" class="md-nav__link">
     <span class="md-ellipsis">
       
-        1. Attack Sequence
+        Overview &amp; Workflow
       
     </span>
   </a>
@@ -520,10 +553,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#2-defense-sequence" class="md-nav__link">
+  <a href="#window-interface-breakdown" class="md-nav__link">
     <span class="md-ellipsis">
       
-        2. Defense Sequence
+        Window Interface Breakdown
       
     </span>
   </a>
@@ -531,10 +564,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#3-combat-resolution-the-matrix" class="md-nav__link">
+  <a href="#1-roll-results-panel" class="md-nav__link">
     <span class="md-ellipsis">
       
-        3. Combat Resolution (The Matrix)
+        1. Roll Results Panel
       
     </span>
   </a>
@@ -542,10 +575,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#4-damage-injury-application" class="md-nav__link">
+  <a href="#2-damage-injury-calculation-panel" class="md-nav__link">
     <span class="md-ellipsis">
       
-        4. Damage &amp; Injury Application
+        2. Damage &amp; Injury Calculation Panel
       
     </span>
   </a>
@@ -553,10 +586,43 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#architecture-flowchart" class="md-nav__link">
+  <a href="#3-hit-location-grid-face-sub-table" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Architecture Flowchart
+        3. Hit Location Grid &amp; Face Sub-Table
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-npc-defender-actions-panel" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. NPC Defender Actions Panel
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-applying-the-result" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Applying the Result
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#counterstrike-handling" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Counterstrike Handling
       
     </span>
   </a>
@@ -580,77 +646,117 @@
 
 
 
-<h1 id="combat-system">Combat System<a class="headerlink" href="#combat-system" title="Permanent link">&para;</a></h1>
-<p>The HarnMaster 3.5E ruleset implements a highly detailed, tactical combat flow designed for realism and fast table resolution. This page outlines the technical implementation and execution sequence.</p>
+<h1 id="combat-resolution-utility">Combat Resolution Utility<a class="headerlink" href="#combat-resolution-utility" title="Permanent link">&para;</a></h1>
+<p>The <strong>Combat Resolution Window (CRW)</strong> is the central interactive hub in Fantasy Grounds Unity for resolving HarnMaster combat. Whenever an attack is made, this window opens automatically for the Game Master, coordinating the attacker's roll, the defender's tactical response, hit location determinations, armor deductions, and injury generation.</p>
 <hr />
-<h2 id="1-attack-sequence">1. Attack Sequence<a class="headerlink" href="#1-attack-sequence" title="Permanent link">&para;</a></h2>
-<ol>
-<li><strong>Initiation</strong>: The attacker rolls an attack (via double-click or drag-and-drop to target) from their weapon entry on the character sheet or combat tracker.</li>
-<li><strong>Handler</strong>: <code>ActionAttack.onAttack</code> (<code>manager_action_attack_hm3.lua</code>) processes the roll.</li>
-<li><strong>Hit Location Determination</strong>:<ul>
-<li>The system calls <code>HitLocationManager.getHitLocation</code> (<code>manager_hitlocations_hm3.lua</code>).</li>
-<li><strong>Inputs</strong>: Target Actor, Attack Zone (High / Mid / Low), Aiming Zone (optional).</li>
-<li><strong>Logic</strong>: Rolls against the appropriate Hit Location table (Humanoid, Quadruped, etc.) to determine the specific body part (e.g., <em>Skull</em>, <em>L. Shoulder</em>, <em>Groin</em>).</li>
-<li><strong>Result</strong>: Stored in the action message and queued for resolution.</li>
-</ul>
-</li>
-</ol>
-<hr />
-<h2 id="2-defense-sequence">2. Defense Sequence<a class="headerlink" href="#2-defense-sequence" title="Permanent link">&para;</a></h2>
-<ol>
-<li><strong>Reaction</strong>: The defender chooses their tactical response (Block, Dodge, Counterstrike, or Ignore).</li>
-<li><strong>Handler</strong>: <code>ActionDefend.onDefend</code> (<code>manager_action_defend_hm3.lua</code>).</li>
-<li><strong>Data Capture</strong>: The defender's roll result and Success Level (Critical Success, Marginal Success, Marginal Failure, Critical Failure) are captured and paired with the attack.</li>
-</ol>
-<hr />
-<h2 id="3-combat-resolution-the-matrix">3. Combat Resolution (The Matrix)<a class="headerlink" href="#3-combat-resolution-the-matrix" title="Permanent link">&para;</a></h2>
-<p>HarnMaster compares the Attacker's Success Level against the Defender's Success Level to determine the outcome.</p>
-<ul>
-<li><strong>Manager</strong>: <code>CombatResolutionManager</code> (<code>manager_combat_resolution_hm3.lua</code>).</li>
-<li><strong>Key Function</strong>: <code>getMatrixResult(sAttackResult, sDefenseResult)</code></li>
-<li><strong>Process</strong>:<ol>
-<li>Looks up the outcome in the standard HarnMaster Combat Matrix (<code>data_common_hm3.lua</code>).</li>
-<li><strong>Result Codes</strong>:<ul>
-<li><code>A*N</code>: Attacker hits with Damage Multiplier <span class="arithmatex">\(N\)</span> (e.g., <code>A*1</code>, <code>A*2</code>, <code>A*3</code>).</li>
-<li><code>D*N</code>: Defender achieves Counterstrike with Damage Multiplier <span class="arithmatex">\(N\)</span>.</li>
-<li><code>Block</code> / <code>Dodge</code>: Attack is completely neutralized.</li>
-<li><code>--</code>: Tactical standoff / no damage.</li>
-</ul>
-</li>
-</ol>
-</li>
-</ul>
-<hr />
-<h2 id="4-damage-injury-application">4. Damage &amp; Injury Application<a class="headerlink" href="#4-damage-injury-application" title="Permanent link">&para;</a></h2>
-<p>When a hit occurs:</p>
-<ol>
-<li><strong>Effective Impact (EI) Calculation</strong>:
-    $<span class="arithmatex">\(\text{Effective Impact} = (\text{Weapon Base Impact} \times \text{Multiplier}) - \text{Location Armor Protection}\)</span>$</li>
-<li><strong>Handler</strong>: <code>ActionDamage</code> (<code>manager_action_damage_hm3.lua</code>).</li>
-<li><strong>Injury Determination</strong>:<ul>
-<li>The remaining Effective Impact is mapped against the struck body location's injury thresholds.</li>
-<li>Generates an <strong>Injury</strong> record classified by severity (<strong>Minor</strong>, <strong>Serious</strong>, or <strong>Grievous</strong>) and injury type (Cut, Stab, Crush, Burn, etc.).</li>
-</ul>
-</li>
-<li><strong>Effect Application</strong>:<ul>
-<li>Automated Shock Rolls, Stun, Bleeding rates, and Amputation effects are applied directly to the Combat Tracker and Character Injury list.</li>
-</ul>
-</li>
-</ol>
-<hr />
-<h2 id="architecture-flowchart">Architecture Flowchart<a class="headerlink" href="#architecture-flowchart" title="Permanent link">&para;</a></h2>
+<h2 id="overview-workflow">Overview &amp; Workflow<a class="headerlink" href="#overview-workflow" title="Permanent link">&para;</a></h2>
 <pre class="mermaid"><code>graph TD
-    Attack[ActionAttack] --&gt;|Determine Location| HitLoc[HitLocationManager]
-    Attack --&gt;|Roll D100| Dice[Dice Engine]
-    Defend[ActionDefend] --&gt;|Roll D100| Dice
-
-    Attack --&gt;|Attacker Result| Resolve[CombatResolutionManager]
-    Defend --&gt;|Defender Result| Resolve
-
-    Resolve --&gt;|Hit Outcome: A*2| Damage[ActionDamage]
-    Damage --&gt;|Calculate EI &amp; Armor| HitLoc
-    Damage --&gt;|Apply Wound &amp; Effects| CT[Combat Tracker]
-    Damage --&gt;|Record Injury| Char[Character Sheet]</code></pre>
+    A[1. Attack Initiated] --&gt; B[CRW Opens for GM]
+    B --&gt; C[2. Defender Action Chosen &amp; Rolled]
+    C --&gt; D[3. Matrix Outcome Calculated]
+    D --&gt; E[4. Hit Location Verified / Adjusted]
+    E --&gt; F[5. Armor Subtracted &amp; Injury Computed]
+    F --&gt; G[6. Click 'Apply Result']
+    G --&gt; H[Wounds, CT Effects &amp; Chat Updated]</code></pre>
+<ol>
+<li><strong>Attack Initiated</strong>: A player or GM rolls an attack from the character sheet or Combat Tracker.</li>
+<li><strong>Window Opens</strong>: The Combat Resolution Window opens, populated with the attacker's weapon, roll result, aim zone, and base damage aspect.</li>
+<li><strong>Defender Rolls</strong>: The defender chooses their defense action (Block, Dodge, Counterstrike, or Ignore) and rolls. The CRW updates immediately.</li>
+<li><strong>Outcome Displayed</strong>: The Combat Matrix result is calculated and displayed (e.g. <code>A*2</code>, <code>D*1</code>, <code>Block</code>).</li>
+<li><strong>Hit Location &amp; Armor</strong>: The struck body part is highlighted in the location grid. Effective Impact is computed against the defender's worn armor at that location.</li>
+<li><strong>Confirmation</strong>: The GM reviews or overrides any field and clicks <strong>Apply Result</strong> to apply injuries and effects to the Combat Tracker and character sheet.</li>
+</ol>
+<hr />
+<h2 id="window-interface-breakdown">Window Interface Breakdown<a class="headerlink" href="#window-interface-breakdown" title="Permanent link">&para;</a></h2>
+<p>The Combat Resolution Window is divided into intuitive, collapsible panels:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>┌────────────────────────────────────────────────────────┐
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>│  Combat Resolution                                     │
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>├────────────────────────────────────────────────────────┤
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>│  Attacker: Broadsword (ML 65)                          │
+<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>│  Attacker Test: [ Marginal Success (MS)  ▼ ]           │
+<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>│  Defender Action: [ Block                ▼ ]           │
+<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>│  Defender Test: [ Marginal Failure (MF)  ▼ ]           │
+<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>│  Matrix Result: A*2 (Attacker Hits x2)                 │
+<a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>│  [ Announce Roll to Chat ]                             │
+<a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a>├────────────────────────────────────────────────────────┤
+<a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a>│  Damage Aspect: [ Edge ▼ ]   Side: [ Left ▼ ]          │
+<a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a>│  Base Impact: [ 12 ]       Effective Impact: [ 7 ]     │
+<a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a>│  Injury Level: Serious Wound (S3)                      │
+<a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a>├────────────────────────────────────────────────────────┤
+<a id="__codelineno-0-15" name="__codelineno-0-15" href="#__codelineno-0-15"></a>│  STRIKE LOCATIONS                                      │
+<a id="__codelineno-0-16" name="__codelineno-0-16" href="#__codelineno-0-16"></a>│  [ Skull ]  [ Forearm ]  [ &gt; L. Shoulder &lt; ]  [ Thigh ] │
+<a id="__codelineno-0-17" name="__codelineno-0-17" href="#__codelineno-0-17"></a>├────────────────────────────────────────────────────────┤
+<a id="__codelineno-0-18" name="__codelineno-0-18" href="#__codelineno-0-18"></a>│  [ Apply Result ]                   [ Cancel ]         │
+<a id="__codelineno-0-19" name="__codelineno-0-19" href="#__codelineno-0-19"></a>└────────────────────────────────────────────────────────┘
+</code></pre></div>
+<hr />
+<h2 id="1-roll-results-panel">1. Roll Results Panel<a class="headerlink" href="#1-roll-results-panel" title="Permanent link">&para;</a></h2>
+<p>This section tracks the opposed check and matrix lookup:</p>
+<ul>
+<li><strong>Attacker Weapon &amp; Test</strong>: Shows the weapon name and attacker success level (<strong>CS</strong> - Critical Success, <strong>MS</strong> - Marginal Success, <strong>MF</strong> - Marginal Failure, <strong>CF</strong> - Critical Failure). The GM can cycle through these if a manual adjustment or GM fiat is desired.</li>
+<li><strong>Defender Action</strong>: A cycler allowing selection of the defender's reaction:<ul>
+<li><strong>Block</strong>: Uses weapon/shield defense Mastery Level.</li>
+<li><strong>Counterstrike</strong>: Defender attacks simultaneously; both rolls are compared on the matrix.</li>
+<li><strong>Dodge</strong>: Agility-based evasion test.</li>
+<li><strong>Ignore</strong>: Defender takes no defensive action (auto Critical Failure for defense).</li>
+</ul>
+</li>
+<li><strong>Defender Test</strong>: The defender's rolled success level (<strong>CS</strong>, <strong>MS</strong>, <strong>MF</strong>, <strong>CF</strong>).</li>
+<li><strong>Matrix Result</strong>: Automatically looks up the interaction in official HarnMaster tables:<ul>
+<li><code>A*1</code>, <code>A*2</code>, <code>A*3</code>, <code>A*4</code>: Attacker hits with indicated impact multiplier.</li>
+<li><code>D*1</code>, <code>D*2</code>: Defender counterstrike hits attacker.</li>
+<li><code>Block</code> / <code>Dodge</code>: Attack is completely neutralized.</li>
+<li><code>--</code>: Tactical standoff; neither side deals damage.</li>
+</ul>
+</li>
+<li><strong>Announce Roll</strong>: Clicking this button broadcasts the current attack/defense narrative and matrix result to the chat log for all players to see.</li>
+</ul>
+<hr />
+<h2 id="2-damage-injury-calculation-panel">2. Damage &amp; Injury Calculation Panel<a class="headerlink" href="#2-damage-injury-calculation-panel" title="Permanent link">&para;</a></h2>
+<p>When the matrix indicates a successful hit, this panel calculates injury severity:</p>
+<ul>
+<li><strong>Damage Aspect</strong>: Displays the active weapon aspect (<strong>Blunt</strong>, <strong>Edge</strong>, <strong>Point</strong>, or <strong>Fire</strong>). Can be cycled to adjust for special weapon usage or damage types.</li>
+<li><strong>Side (Left / Right)</strong>: Indicates whether the left or right side of the body was struck.</li>
+<li><strong>Base Impact &amp; Effective Impact</strong>:<ul>
+<li><strong>Base Impact</strong>: Weapon impact multiplied by the matrix multiplier (<span class="arithmatex">\(A \times N\)</span>).</li>
+<li><strong>Effective Impact (EI)</strong>: Automatically deducts the defender's armor value covering the specific hit location.</li>
+</ul>
+</li>
+<li><strong>Injury Level</strong>: Displays the computed wound severity (<strong>Minor</strong>, <strong>Serious</strong>, <strong>Grievous</strong>, or <strong>Amputation</strong>) based on the body part and remaining Effective Impact.</li>
+</ul>
+<hr />
+<h2 id="3-hit-location-grid-face-sub-table">3. Hit Location Grid &amp; Face Sub-Table<a class="headerlink" href="#3-hit-location-grid-face-sub-table" title="Permanent link">&para;</a></h2>
+<p>The utility includes an interactive body location picker:</p>
+<ul>
+<li><strong>Automated Roll Selection</strong>: The location determined by the attack roll is automatically highlighted in red.</li>
+<li><strong>Manual Override</strong>: The GM can click any location button (e.g., <em>Skull</em>, <em>Thorax</em>, <em>Forearm</em>, <em>Thigh</em>) to change the targeted location on the fly; the effective impact and armor values recalculate immediately.</li>
+<li><strong>Face Sub-Location Grid</strong>: If the struck location is <strong>Face</strong>, a secondary grid appears allowing granular targeting for:<ul>
+<li><em>Eye</em>, <em>Cheek</em>, <em>Nose</em>, <em>Mouth</em>, <em>Jaw</em>, or <em>Ear</em>.</li>
+</ul>
+</li>
+</ul>
+<hr />
+<h2 id="4-npc-defender-actions-panel">4. NPC Defender Actions Panel<a class="headerlink" href="#4-npc-defender-actions-panel" title="Permanent link">&para;</a></h2>
+<p>When attacking an NPC, the window displays the NPC's available actions, traits, and combat powers directly below the damage panel. This allows the GM to quickly review special defenses, resistances, or reactions without needing to open the NPC stat sheet.</p>
+<hr />
+<h2 id="5-applying-the-result">5. Applying the Result<a class="headerlink" href="#5-applying-the-result" title="Permanent link">&para;</a></h2>
+<p>At the bottom of the window:</p>
+<ul>
+<li><strong>Apply Result</strong>:<ul>
+<li>Applies the calculated wound directly to the defender's <strong>Injuries Tab</strong>.</li>
+<li>Updates current total injury penalties on the character sheet and Combat Tracker.</li>
+<li>Generates required <strong>Shock Rolls</strong>, <strong>Stumble/Knockdown</strong> prompts, or <strong>Bleeding</strong> rates in the chat window.</li>
+<li>Closes the Combat Resolution Window.</li>
+</ul>
+</li>
+<li><strong>Cancel</strong>: Closes the resolution window without applying any damage or status changes.</li>
+</ul>
+<hr />
+<h2 id="counterstrike-handling">Counterstrike Handling<a class="headerlink" href="#counterstrike-handling" title="Permanent link">&para;</a></h2>
+<p>When a defender chooses <strong>Counterstrike</strong>:
+1. The defender makes an attack roll against the original attacker.
+2. The resolution matrix compares both rolls.
+3. If the defender succeeds, a linked secondary resolution window opens with the roles reversed, allowing immediate resolution of the counterstrike impact and injury.</p>
 
 
 
