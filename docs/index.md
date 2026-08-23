@@ -25,12 +25,9 @@ This ruleset implements the HarnMaster 3rd Edition rules (with 3.5 customization
 
 ## Installation
 
-1. Download the latest release or clone the repository.
-2. Place the `HarnMaster3.5E` directory into your Fantasy Grounds `rulesets/` folder:
-    * **Windows**: `%APPDATA%\SmiteWorks\Fantasy Grounds\rulesets\`
-    * **Mac / Linux**: Check your Fantasy Grounds Unity settings for the data directory.
-3. Restart Fantasy Grounds Unity.
-4. Create a new campaign and choose **HarnMaster** as the ruleset.
+1. Subscribe to the **HarnMaster 3.5E** ruleset on the [Fantasy Grounds Forge](https://forge.fantasygrounds.com/).
+2. Open the Fantasy Grounds Unity launcher and click **Check for Updates** to download the ruleset.
+3. Create a new campaign and choose **HarnMaster** as the ruleset.
 
 ---
 
