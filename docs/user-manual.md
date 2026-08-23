@@ -88,7 +88,7 @@ Skills are grouped by skill group (Physical, Combat, etc.). Use the filter box a
 
 **Detailed Skills Window:** Click the **Details** button (top-right of the SKILLS header) to open the full skill editor in a wider popup window. Each row there shows all fields:
 
-| Column | Meaning |On the skil
+| Column | Meaning |
 |---|---|
 | **Name** | Skill name |
 | **Speciality** | Optional specialization within the skill |
