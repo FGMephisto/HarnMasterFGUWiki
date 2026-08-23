@@ -1,0 +1,2116 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Official documentation and user manual for HarnMaster 3.5E on Fantasy Grounds Unity">
+      
+      
+        <meta name="author" content="Mephisto">
+      
+      
+        <link rel="canonical" href="https://fgmephisto.github.io/HarnMasterFGUWiki/user-manual/">
+      
+      
+        <link rel="prev" href="..">
+      
+      
+        <link rel="next" href="../combat-system/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
+    
+    
+      
+        <title>User Manual - HarnMaster 3.5E Ruleset Documentation</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.ec1eaa64.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="brown" data-md-color-accent="amber">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#harnmaster-35e-for-fantasy-grounds-user-manual" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="HarnMaster 3.5E Ruleset Documentation" class="md-header__button md-logo" aria-label="HarnMaster 3.5E Ruleset Documentation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            HarnMaster 3.5E Ruleset Documentation
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              User Manual
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="brown" data-md-color-accent="amber"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="brown" data-md-color-accent="amber"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/FGMephisto/HarnMasterFGUWiki" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    FGMephisto/HarnMasterFGUWiki
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href=".." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    <li class="md-tabs__item md-tabs__item--active">
+      <a href="./" class="md-tabs__link">
+        
+  
+  
+    
+  
+  User Manual
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../combat-system/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Combat System
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../developer-guide/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Developer Guide
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="HarnMaster 3.5E Ruleset Documentation" class="md-nav__button md-logo" aria-label="HarnMaster 3.5E Ruleset Documentation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    HarnMaster 3.5E Ruleset Documentation
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/FGMephisto/HarnMasterFGUWiki" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    FGMephisto/HarnMasterFGUWiki
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    User Manual
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    User Manual
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#table-of-contents" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Table of Contents
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#introduction" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Introduction
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-character-sheet" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The Character Sheet
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="The Character Sheet">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#skills-tab-attributes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Skills Tab — Attributes
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#skills-tab" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Skills Tab
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mystic-tab-magic-powers" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Mystic Tab — Magic &amp; Powers
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#inventory-tab" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Inventory Tab
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#combat-tab-armor-penalties" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Combat Tab — Armor &amp; Penalties
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#combat-tab-injuries" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Combat Tab — Injuries
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#combat-tab-strike-locations" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Combat Tab — Strike Locations
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#actions-tab-weapons" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Actions Tab — Weapons
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Actions Tab — Weapons">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#weapon-list" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Weapon List
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#weapon-editor" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Weapon Editor
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#adding-attack-entries" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Adding Attack Entries
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#gm-tab-background" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        GM Tab — Background
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#making-rolls" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Making Rolls
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Making Rolls">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#the-modifier-box" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The Modifier Box
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#combat" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Combat
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Combat">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#initiative" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Initiative
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#attack" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Attack
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defense" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Defense
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#damage" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Damage
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#shock-rolls" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Shock Rolls
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#game-master-guide" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Game Master Guide
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Game Master Guide">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#the-combat-tracker" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The Combat Tracker
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#the-combat-resolution-window" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The Combat Resolution Window
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#npcs" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        NPCs
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#encounters" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Encounters
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#gm-options" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        GM Options
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#reference" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Reference
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Reference">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#attribute-quick-reference" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Attribute Quick Reference
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#skill-groups" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Skill Groups
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#damage-types" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Damage Types
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../combat-system/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Combat System
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../developer-guide/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Developer Guide
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#table-of-contents" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Table of Contents
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#introduction" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Introduction
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-character-sheet" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The Character Sheet
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="The Character Sheet">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#skills-tab-attributes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Skills Tab — Attributes
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#skills-tab" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Skills Tab
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mystic-tab-magic-powers" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Mystic Tab — Magic &amp; Powers
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#inventory-tab" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Inventory Tab
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#combat-tab-armor-penalties" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Combat Tab — Armor &amp; Penalties
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#combat-tab-injuries" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Combat Tab — Injuries
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#combat-tab-strike-locations" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Combat Tab — Strike Locations
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#actions-tab-weapons" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Actions Tab — Weapons
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Actions Tab — Weapons">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#weapon-list" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Weapon List
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#weapon-editor" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Weapon Editor
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#adding-attack-entries" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Adding Attack Entries
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#gm-tab-background" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        GM Tab — Background
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#making-rolls" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Making Rolls
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Making Rolls">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#the-modifier-box" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The Modifier Box
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#combat" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Combat
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Combat">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#initiative" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Initiative
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#attack" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Attack
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defense" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Defense
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#damage" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Damage
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#shock-rolls" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Shock Rolls
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#game-master-guide" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Game Master Guide
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Game Master Guide">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#the-combat-tracker" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The Combat Tracker
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#the-combat-resolution-window" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The Combat Resolution Window
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#npcs" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        NPCs
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#encounters" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Encounters
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#gm-options" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        GM Options
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#reference" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Reference
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Reference">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#attribute-quick-reference" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Attribute Quick Reference
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#skill-groups" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Skill Groups
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#damage-types" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Damage Types
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+<h1 id="harnmaster-35e-for-fantasy-grounds-user-manual">HarnMaster 3.5E for Fantasy Grounds — User Manual<a class="headerlink" href="#harnmaster-35e-for-fantasy-grounds-user-manual" title="Permanent link">&para;</a></h1>
+<h2 id="table-of-contents">Table of Contents<a class="headerlink" href="#table-of-contents" title="Permanent link">&para;</a></h2>
+<ol>
+<li><a href="#introduction">Introduction</a></li>
+<li><a href="#the-character-sheet">The Character Sheet</a></li>
+<li><a href="#skills-tab">Skills Tab</a></li>
+<li><a href="#mystic-tab--magic--powers">Mystic Tab — Magic &amp; Powers</a></li>
+<li><a href="#inventory-tab">Inventory Tab</a></li>
+<li><a href="#combat-tab--armor--penalties">Combat Tab — Armor &amp; Penalties</a></li>
+<li><a href="#combat-tab--injuries">Combat Tab — Injuries</a></li>
+<li><a href="#combat-tab--strike-locations">Combat Tab — Strike Locations</a></li>
+<li><a href="#actions-tab--weapons">Actions Tab — Weapons</a></li>
+<li><a href="#gm-tab--background">GM Tab — Background</a></li>
+<li><a href="#making-rolls">Making Rolls</a></li>
+<li><a href="#combat">Combat</a></li>
+<li><a href="#initiative">Initiative</a></li>
+<li><a href="#attack">Attack</a></li>
+<li><a href="#defense">Defense</a></li>
+<li><a href="#damage">Damage</a></li>
+<li><a href="#the-combat-resolution-window">The Combat Resolution Window</a></li>
+<li><a href="#game-master-guide">Game Master Guide</a></li>
+<li><a href="#the-combat-tracker">The Combat Tracker</a></li>
+<li><a href="#npcs">NPCs</a></li>
+<li><a href="#encounters">Encounters</a></li>
+<li><a href="#gm-options">GM Options</a></li>
+<li><a href="#reference">Reference</a></li>
+<li><a href="#attribute-quick-reference">Attribute Quick Reference</a></li>
+<li><a href="#skill-groups">Skill Groups</a></li>
+<li><a href="#damage-types">Damage Types</a></li>
+</ol>
+<hr />
+<h2 id="introduction">Introduction<a class="headerlink" href="#introduction" title="Permanent link">&para;</a></h2>
+<p>This manual covers the Fantasy Grounds Unity implementation of <strong>HarnMaster 3.5E</strong>. It focuses on how to use the software — what each button does, how the roll sequence works, and how data is laid out — rather than repeating the tabletop rules. Keep your HarnMaster rulebook handy for the underlying mechanics.</p>
+<hr />
+<h2 id="the-character-sheet">The Character Sheet<a class="headerlink" href="#the-character-sheet" title="Permanent link">&para;</a></h2>
+<p>The character sheet has six tabs:</p>
+<table>
+<thead>
+<tr>
+<th>Tab</th>
+<th>Contents</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Skills</strong></td>
+<td>All attributes and skills, ML, SB, development</td>
+</tr>
+<tr>
+<td><strong>Actions</strong></td>
+<td>Weapons and their attack/defense/damage actions</td>
+</tr>
+<tr>
+<td><strong>Combat</strong></td>
+<td>Armor worn, penalty summary</td>
+</tr>
+<tr>
+<td><strong>Locations</strong></td>
+<td>Strike location table with armor per location</td>
+</tr>
+<tr>
+<td><strong>Mystic</strong></td>
+<td>Convocation spells and rituals</td>
+</tr>
+<tr>
+<td><strong>Inventory</strong></td>
+<td>Carried items, encumbrance</td>
+</tr>
+<tr>
+<td><strong>GM</strong></td>
+<td>Biographical data (GM-only)</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="skills-tab-attributes">Skills Tab — Attributes<a class="headerlink" href="#skills-tab-attributes" title="Permanent link">&para;</a></h3>
+<p>The top portion of the Skills tab always shows the character's fifteen attributes in a compact grid.</p>
+<p><strong>Main view (compact):</strong> Each row shows the attribute abbreviation and its <strong>Total</strong> score — the final value used in play. Click the roll button to make an attribute roll. The roll can be adjusted using the Modifier Box (see below).</p>
+<p><strong>Attribute Editor (detail popup):</strong> Click the <strong>Details</strong> button (top-right of the ATTRIBUTES header) to open the attribute editor in a separate window. Each row there shows:</p>
+<table>
+<thead>
+<tr>
+<th>Column</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Name</strong></td>
+<td>Full attribute name</td>
+</tr>
+<tr>
+<td><strong>Base</strong></td>
+<td>The raw value set during character creation — editable</td>
+</tr>
+<tr>
+<td><strong>Mod.</strong></td>
+<td>A flat bonus (from species, magic, etc.) — editable</td>
+</tr>
+<tr>
+<td><strong>Total</strong></td>
+<td>Computed final value (Base + Mod.) — read-only</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="skills-tab">Skills Tab<a class="headerlink" href="#skills-tab" title="Permanent link">&para;</a></h3>
+<p>Below the attributes, the same tab shows the character's skill list in compact form.</p>
+<p><strong>Main view (compact):</strong> Each row shows:</p>
+<table>
+<thead>
+<tr>
+<th>Column</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Name</strong></td>
+<td>Skill name (with speciality appended if set)</td>
+</tr>
+<tr>
+<td><strong>SB</strong></td>
+<td>Skill Base — computed from the linked attributes</td>
+</tr>
+<tr>
+<td><strong>ML</strong></td>
+<td>Mastery Level — the number rolled against; click to roll</td>
+</tr>
+</tbody>
+</table>
+<p>Skills are grouped by skill group (Physical, Combat, etc.). Use the filter box at the bottom to search by name.</p>
+<p><strong>Rolling a skill:</strong> Click the roll button on the right of any skill row to send the roll to chat.</p>
+<p><strong>Detailed Skills Window:</strong> Click the <strong>Details</strong> button (top-right of the SKILLS header) to open the full skill editor in a wider popup window. Each row there shows all fields:</p>
+<p>| Column | Meaning |On the skil
+|---|---|
+| <strong>Name</strong> | Skill name |
+| <strong>Speciality</strong> | Optional specialization within the skill |
+| <strong>Skill Group</strong> | Category (Physical, Combat, Crafts &amp; Lore, etc.) |
+| <strong>Attributes</strong> | The attributes the SB is derived from (up to three) |
+| <strong>Sunsigns</strong> | Sunsign bonus value (if applicable) |
+| <strong>OML</strong> | Opening Mastery Level — the initial ML at skill acquisition |
+| <strong>SB</strong> | Skill Base — computed, read-only |
+| <strong>Dev.</strong> | Development ranks added through play — editable |
+| <strong>ML</strong> | Mastery Level — computed final value |</p>
+<p>The detailed window also has a <strong>Development Roll</strong> button per row (the dice icon next to ML). Use this to test whether the skill improves.</p>
+<hr />
+<h3 id="mystic-tab-magic-powers">Mystic Tab — Magic &amp; Powers<a class="headerlink" href="#mystic-tab-magic-powers" title="Permanent link">&para;</a></h3>
+<p><strong>This is still under development</strong></p>
+<p>The Mystic tab (labelled <strong>Mystic</strong> in the tab bar) contains the character's magical abilities. HarnMaster magic is convocation-based; the six convocations are:</p>
+<table>
+<thead>
+<tr>
+<th>Convocation</th>
+<th>Element</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Fyvria</td>
+<td>Earth / Nature</td>
+</tr>
+<tr>
+<td>Jmorvi</td>
+<td>Metal / Craft</td>
+</tr>
+<tr>
+<td>Lyahvi</td>
+<td>Light / Illusion</td>
+</tr>
+<tr>
+<td>Odivshe</td>
+<td>Water / Cold</td>
+</tr>
+<tr>
+<td>Peleahn</td>
+<td>Fire / Energy</td>
+</tr>
+<tr>
+<td>Savorya</td>
+<td>Mind / Spirit</td>
+</tr>
+</tbody>
+</table>
+<p>Each spell entry shows:
+- <strong>Name</strong>
+- <strong>Convocation</strong>
+- <strong>Complexity Level</strong>
+- <strong>Casting Time</strong>
+- <strong>Range / Area</strong>
+- <strong>Duration</strong>
+- <strong>Summary</strong> — short description
+- <strong>Description</strong> / <strong>Bonus Effects</strong> — full text</p>
+<p>Click a spell to cast it (rolls the appropriate convocation skill). Fatigue cost is tracked automatically.</p>
+<hr />
+<h3 id="inventory-tab">Inventory Tab<a class="headerlink" href="#inventory-tab" title="Permanent link">&para;</a></h3>
+<p>The Inventory tab lists all items carried. Key columns:
+- <strong>WT</strong> — item weight
+- <strong>WQ</strong> — weapon quality (for weapons in inventory)
+- Encumbrance totals at the bottom update the <strong>Penalty</strong> field, which feeds into the Universal Penalty.</p>
+<p>Drag an item into the list to add it. Check the <strong>Equipped</strong> box to mark worn armor — equipped armor feeds its protection values into the strike location armor table automatically.</p>
+<hr />
+<h3 id="combat-tab-armor-penalties">Combat Tab — Armor &amp; Penalties<a class="headerlink" href="#combat-tab-armor-penalties" title="Permanent link">&para;</a></h3>
+<p>The Combat tab summarizes three things:</p>
+<p><strong>Strike location armor</strong> — the strike location table showing B/E/P/F protection values per body location. See <a href="#combat-tab--strike-locations">Combat Tab — Strike Locations</a> below for the full reference.</p>
+<p><strong>Penalties list</strong> — a summary of active injury penalties feeding into Universal Penalty and Physical Penalty on the main tab.</p>
+<p><strong>Injury list</strong> — all current injuries. See <a href="#combat-tab--injuries">Combat Tab — Injuries</a> below for the full field reference.</p>
+<hr />
+<h3 id="combat-tab-injuries">Combat Tab — Injuries<a class="headerlink" href="#combat-tab-injuries" title="Permanent link">&para;</a></h3>
+<p>Injuries are listed as a sub-panel on the Combat tab. Click the <strong>Details</strong> button on any injury row to open a popup window with the full injury record. Each injury row records:</p>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Location</strong></td>
+<td>Body part affected</td>
+</tr>
+<tr>
+<td><strong>Aspect</strong></td>
+<td>Blunt, Edge, Point, Fire, or Frost</td>
+</tr>
+<tr>
+<td><strong>IL (Injury Level)</strong></td>
+<td>Minor, Serious, or Grievous</td>
+</tr>
+<tr>
+<td><strong>HR (Healing Rate)</strong></td>
+<td>Days per healing step</td>
+</tr>
+<tr>
+<td><strong>Date</strong></td>
+<td>In-game date the injury was received</td>
+</tr>
+<tr>
+<td><strong>Notes</strong></td>
+<td>Free text</td>
+</tr>
+</tbody>
+</table>
+<p>The injury aspect and level determine the flavour text automatically (e.g., Blunt + Minor = <em>Bruised</em>, Edge + Grievous = <em>Grievous Cut</em>). Amputations are tracked separately with their own label.</p>
+<p><strong>Bloodloss</strong> appears as a special injury entry when a bleeding wound is active (requires the Bleeders GM option).</p>
+<p>Penalties update automatically as injuries are added, removed, or healed. The <strong>Universal Penalty</strong> and <strong>Physical Penalty</strong> on the main tab reflect the current total.</p>
+<p><strong>Healing:</strong> Update the <strong>Healing Rate (HR)</strong> field and advance the <strong>Date</strong> when a healing interval passes. Setting an HR value indicates the wound has been treated by a physician.</p>
+<p><strong>Bloodloss (Bleeders option):</strong> When active, a Bleeders injury entry appears automatically for grievous wounds.</p>
+<p><strong>Amputations:</strong> When the GM option is enabled, certain wound results can trigger amputation. The location is marked <strong>severed</strong> or <strong>unusable</strong> and a condition note is added.</p>
+<hr />
+<h3 id="combat-tab-strike-locations">Combat Tab — Strike Locations<a class="headerlink" href="#combat-tab-strike-locations" title="Permanent link">&para;</a></h3>
+<p>This tab shows the character's body map — all named strike locations with their armor values.</p>
+<table>
+<thead>
+<tr>
+<th>Column</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Strike Locations</strong></td>
+<td>Body location name (Skull, Face, Neck, Thorax, etc.)</td>
+</tr>
+<tr>
+<td><strong>B / E / P / F</strong></td>
+<td>Armor protection at that location by damage type</td>
+</tr>
+</tbody>
+</table>
+<p>During combat resolution, the system rolls on this table (or a High/Low sub-table when an aim zone is active) to determine where a successful hit lands.</p>
+<hr />
+<h3 id="actions-tab-weapons">Actions Tab — Weapons<a class="headerlink" href="#actions-tab-weapons" title="Permanent link">&para;</a></h3>
+<p>The Actions tab is the primary interface for combat. Each weapon entry shows its attack and defense actions.</p>
+<h4 id="weapon-list">Weapon List<a class="headerlink" href="#weapon-list" title="Permanent link">&para;</a></h4>
+<p>Each weapon entry displays:
+- <strong>Name</strong> — weapon or attack name (underlined; click to rename)
+- <strong>Attack (sword icon)</strong> — click to make an attack roll; shows current <strong>AML</strong>
+- <strong>Defend (shield icon)</strong> — click to make a defense roll; shows current <strong>DML</strong>
+- <strong>Damage (fist icon)</strong> — click to roll damage; shows the <strong>B/E/P</strong> dice for the active aspect
+- <strong>Damage Aspect icon</strong> — cycles between Blunt, Edge, and Point to select which damage column is active
+- <strong>Aim Zone toggle</strong> — cycles between <strong>High</strong>, <strong>Mid</strong> (default), and <strong>Low</strong> to set where the attack is aimed</p>
+<p>For ranged and thrown weapons, the row also shows:
+- <strong>Range bracket</strong> — current range band (Short / Medium / Long / Extreme)
+- <strong>Ammo counter</strong> — tracks remaining ammunition with a pip display; set maximum ammo in the field next to it</p>
+<h4 id="weapon-editor">Weapon Editor<a class="headerlink" href="#weapon-editor" title="Permanent link">&para;</a></h4>
+<p>Click the <strong>detail button</strong> (grid icon, right side of each weapon row) to open the weapon editor. This is where you configure a weapon's statistics:</p>
+<p><strong>Stats section</strong>
+- <strong>Weapon</strong> — display name
+- <strong>WQ / Current</strong> — weapon quality (base) and current condition
+- <strong>Note</strong> — free-text note about this attack entry. Can be usd to denote ammo etc..
+- <strong>Type</strong> — Melee, Ranged, or Thrown
+- <strong>Skill</strong> — the skill name this weapon uses for ML calculation (type to autocomplete from the skill list)
+- <strong>A/D/HM</strong> — three fields: Attack modifier, Defense modifier, Handmode penalty. These are added to the base skill ML to compute AML and DML
+- <strong>B/E/P</strong> — damage dice for Blunt, Edge, and Point aspects
+- <strong>Range S/M/L/E</strong> — range band values in metres (appears for Ranged and Thrown types)</p>
+<p><strong>Properties</strong> — free-text field for notes (special qualities, magical properties, etc.)</p>
+<h4 id="adding-attack-entries">Adding Attack Entries<a class="headerlink" href="#adding-attack-entries" title="Permanent link">&para;</a></h4>
+<p>Right-click in the weapon list and choose:
+- <strong>Add Melee</strong> — adds a melee attack entry
+- <strong>Add Ranged</strong> — adds a ranged attack entry
+- <strong>Add Throwing</strong> — adds a thrown weapon entry</p>
+<hr />
+<h3 id="gm-tab-background">GM Tab — Background<a class="headerlink" href="#gm-tab-background" title="Permanent link">&para;</a></h3>
+<p>The GM tab is visible only to the GM and contains biographical information:
+- Birthdate, Sunsign, Sunsign (Cusp)
+- Species, Gender
+- Height, Frame, Weight
+- Hair Color, Eye Color, Voice
+- Culture, Social Class
+- Speed (calculated from MOV)</p>
+<p>The <strong>Sunsign</strong> fields matter mechanically — sunsign bonuses appear in the Skills tab against skills that have sunsign affinity.</p>
+<hr />
+<h2 id="making-rolls">Making Rolls<a class="headerlink" href="#making-rolls" title="Permanent link">&para;</a></h2>
+<p>All rolls in this ruleset follow the same pattern: roll percentile (d100) and compare to the target number. The system reports one of four outcomes:</p>
+<table>
+<thead>
+<tr>
+<th>Result</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Critical Success (CS)</strong></td>
+<td>Roll ≤ ML ending with a five (5) or zero</td>
+</tr>
+<tr>
+<td><strong>Marginal Success (MS)</strong></td>
+<td>Roll ≤ ML or Roll ≤ 5</td>
+</tr>
+<tr>
+<td><strong>Marginal Failure (MF)</strong></td>
+<td>Roll &gt; ML or Roll &gt; 96</td>
+</tr>
+<tr>
+<td><strong>Critical Failure (CF)</strong></td>
+<td>Roll &gt; ML or Roll &gt; 96, ending with a five (5) or zero</td>
+</tr>
+</tbody>
+</table>
+<p>To roll:
+- <strong>Attribute check:</strong> click the roll button next to an attribute on the Skills tab
+- <strong>Skill check:</strong> click the roll button on the Skills tab
+- <strong>Attack:</strong> click the sword button on the Actions tab (or drag it to a target)
+- <strong>Defense:</strong> click the shield button (or use the prompt that appears after an incoming attack)
+- <strong>Damage:</strong> click the fist/damage button</p>
+<p>The <strong>chat window</strong> shows the full breakdown: the roll, the target (ML), any modifiers, and the outcome label.</p>
+<h3 id="the-modifier-box">The Modifier Box<a class="headerlink" href="#the-modifier-box" title="Permanent link">&para;</a></h3>
+<p>The <strong>Modifier Box</strong> is a floating panel on the FGU desktop (bottom-centre by default). It lets you stack bonuses and presets onto the next roll before you click anything on the character sheet. Modifiers clear automatically after each roll.</p>
+<p><strong>Numeric modifier:</strong> Type a positive or negative number into the box to add a flat bonus or penalty to the roll target.</p>
+<p><strong>Preset buttons — SB Multiplier (×2 through ×7):</strong></p>
+<p>HarnMaster skill and attribute checks are resolved by comparing a d100 roll against a target derived from the character's Skill Base. The default multiplier is <strong>×5</strong> (ML = SB × 5 + development). Activate one of the MULT presets <em>before</em> rolling to change this:</p>
+<table>
+<thead>
+<tr>
+<th>Preset</th>
+<th>Effect on skill/attribute check</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>×2</strong></td>
+<td>Target = SB × 2 (very hard task)</td>
+</tr>
+<tr>
+<td><strong>×3</strong></td>
+<td>Target = SB × 3 (hard task)</td>
+</tr>
+<tr>
+<td><strong>×4</strong></td>
+<td>Target = SB × 4 (moderate task)</td>
+</tr>
+<tr>
+<td><strong>×5</strong></td>
+<td>Target = SB × 5 — <strong>default</strong> (standard task)</td>
+</tr>
+<tr>
+<td><strong>×6</strong></td>
+<td>Target = SB × 6 (easy task)</td>
+</tr>
+<tr>
+<td><strong>×7</strong></td>
+<td>Target = SB × 7 (trivial task)</td>
+</tr>
+</tbody>
+</table>
+<p>For <strong>damage rolls</strong>, the same MULT presets multiply the number of dice in the roll: ×2 adds a second set of the weapon's damage dice to the pool (e.g., a 1d6 weapon rolls 2d6), ×3 adds a third set, and so on. All dice are rolled together in a single roll. Use this for mounted charges, special manoeuvres, or other rules that call for multiplied damage.</p>
+<hr />
+<h2 id="combat">Combat<a class="headerlink" href="#combat" title="Permanent link">&para;</a></h2>
+<p>HarnMaster combat in Fantasy Grounds is a three-step sequence per exchange: <strong>Attack → Defense → Damage</strong>. The results of all three are held and then resolved together in the <strong>Combat Resolution Window</strong>.</p>
+<h3 id="initiative">Initiative<a class="headerlink" href="#initiative" title="Permanent link">&para;</a></h3>
+<p>Before combat begins, set initiative for all participants.</p>
+<ul>
+<li>Right-click a combatant in the <strong>Combat Tracker</strong> and choose <strong>Set Initiative</strong>.</li>
+<li><strong>Set All Initiatives</strong> rolls initiative for everyone at once.</li>
+<li><strong>Set NPC Initiatives</strong> / <strong>Set PC Initiatives</strong> roll only for the selected group.</li>
+</ul>
+<p>Initiative is derived from the character's initiative skill and relevant modifiers.
+Initiative can also be set manually per combatant in the Initiative field.</p>
+<h3 id="attack">Attack<a class="headerlink" href="#attack" title="Permanent link">&para;</a></h3>
+<ol>
+<li>On the attacker's Actions tab, click the <strong>sword button</strong> next to the weapon to use.</li>
+<li>The roll is sent to chat showing the AML, the d100 result, and the outcome (CS/MS/MF/CF).</li>
+<li>If an attack target is set in the Combat Tracker, the result is automatically associated with that defender.</li>
+</ol>
+<p><strong>Aim Zone:</strong> Before attacking, click the aim zone toggle on the weapon row to choose <strong>High</strong>, <strong>Mid</strong>, or <strong>Low</strong>. This shifts the hit location table used during resolution.</p>
+<h3 id="defense">Defense<a class="headerlink" href="#defense" title="Permanent link">&para;</a></h3>
+<p>After an attack lands, the defender is prompted to choose a defense action:</p>
+<table>
+<thead>
+<tr>
+<th>Defense</th>
+<th>Effect</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Block</strong></td>
+<td>Roll DML; success reduces or cancels the attacker's success</td>
+</tr>
+<tr>
+<td><strong>Counterstrike</strong></td>
+<td>Roll an attack in return; both results are compared simultaneously</td>
+</tr>
+<tr>
+<td><strong>Dodge</strong></td>
+<td>Roll AGL-based dodge skill; success avoids the attack</td>
+</tr>
+<tr>
+<td><strong>Ignore</strong></td>
+<td>No defense roll; attack resolves at full effectiveness</td>
+</tr>
+</tbody>
+</table>
+<p>The defense roll result (CS/MS/MF/CF) is held alongside the attack result.</p>
+<h3 id="damage">Damage<a class="headerlink" href="#damage" title="Permanent link">&para;</a></h3>
+<p>After the defense resolves, the attacker rolls damage by clicking the <strong>damage button</strong>. Damage is rolled according to the active aspect (B/E/P) displayed on the weapon row.</p>
+<h3 id="shock-rolls">Shock Rolls<a class="headerlink" href="#shock-rolls" title="Permanent link">&para;</a></h3>
+<p>A shock roll is triggered automatically when a character takes a new injury. The status effects applied depend on the current state and roll outcome:</p>
+<table>
+<thead>
+<tr>
+<th>Current state</th>
+<th>Roll outcome</th>
+<th>Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Normal</td>
+<td>Fail</td>
+<td>→ <strong>Unconscious</strong> + <strong>Prone</strong></td>
+</tr>
+<tr>
+<td>Unconscious (per-turn reroll)</td>
+<td>Pass</td>
+<td>→ <strong>Incapacitated</strong> + immediate second shock check</td>
+</tr>
+<tr>
+<td>Incapacitated (second check)</td>
+<td>Fail</td>
+<td>→ <strong>Shock</strong></td>
+</tr>
+<tr>
+<td>Incapacitated (second check)</td>
+<td>Pass</td>
+<td>→ Conditions removed (recovered)</td>
+</tr>
+</tbody>
+</table>
+<p>NPCs in the <strong>Unconscious</strong> state roll automatically at the start of their turn. For PCs all shock rolls are manual; the roll label in chat adapts to the current state so the player knows what they are rolling for.</p>
+<p><strong>Shock</strong> is a persistent condition. The character cannot act offensively; any attack against them resolves as if they chose Ignore. Recovery requires physician care outside combat.</p>
+<hr />
+<h2 id="game-master-guide">Game Master Guide<a class="headerlink" href="#game-master-guide" title="Permanent link">&para;</a></h2>
+<h3 id="the-combat-tracker">The Combat Tracker<a class="headerlink" href="#the-combat-tracker" title="Permanent link">&para;</a></h3>
+<p>Open the Combat Tracker from the toolbar. Key HarnMaster additions:</p>
+<ul>
+<li><strong>Locations</strong> — each combatant's strike location table is accessible from their CT entry</li>
+<li><strong>Injuries</strong> — a compact injury list is visible without opening the full character sheet</li>
+<li><strong>FT (Fatigue)</strong> — shown inline for quick reference</li>
+</ul>
+<p><strong>Running combat from the CT:</strong>
+- Set initiative and sort the list.
+- Click a combatant's token to select them as the active attacker.
+- Right-click a target token and choose <strong>Target</strong> to link attacker to defender.
+- Use the weapon buttons on the CT entry to roll attack and damage directly without opening the full sheet.</p>
+<h3 id="the-combat-resolution-window">The Combat Resolution Window<a class="headerlink" href="#the-combat-resolution-window" title="Permanent link">&para;</a></h3>
+<p>The <strong>Combat Resolution Window</strong> opens for the GM as soon as the attack roll resolves, targeting the defender. It updates progressively as the defense roll and then the damage roll come in. Players see a running summary in chat.</p>
+<p>The window shows:
+- <strong>Attack Outcome</strong> — the attacker's success level
+- <strong>Defense Action</strong> and <strong>Defender Test</strong> — what the defender chose and their roll result
+- <strong>Result</strong> — the final outcome from the attack/defense matrix (e.g., attacker CS vs. defender Block MF = attacker wins decisively)
+- <strong>Total Impact</strong> — effective damage after armor at the struck location is subtracted
+- <strong>Effective Impact</strong> and <strong>Injury Level</strong> — the resulting IL (Minor / Serious / Grievous / Amputation)
+- <strong>Strike Location</strong> — the location roll result; click to override</p>
+<p>The injury is applied to the defender's injury list automatically. Penalties update immediately.</p>
+<h3 id="npcs">NPCs<a class="headerlink" href="#npcs" title="Permanent link">&para;</a></h3>
+<p>Create NPCs from <strong>NPCs</strong> in the sidebar. The NPC main tab is divided into four panels stacked vertically: a summary header, an attributes grid, a skills field, and an actions list.</p>
+<p><strong>Attributes:</strong> Displayed as a compact grid, identical in structure to the PC sheet. Each row shows the attribute abbreviation and score. Click the roll button to make an attribute check.</p>
+<p><strong>Skills:</strong> A single free-text field labelled <strong>Skills</strong>. Type skill names and their ML values directly (e.g. <code>Sword 65, Riding 42</code>). The field supports multi-roll — clicking a skill name or value in the rendered text opens a roll prompt for that skill, so the GM can roll directly from the field without opening a separate window.</p>
+<p><strong>Actions:</strong> A list of free-text action entries under the <strong>ACTIONS</strong> header. Each entry has a bold <strong>name</strong> line and a free-text <strong>description</strong> block below it. Use the <strong>+</strong> button (top-right of the header) to add a new entry; use the edit (pencil) button to enter delete mode. Actions are narrative — they do not link to the structured weapon system used by PCs. For weapon attacks on NPCs, add weapon entries via drag-and-drop as described below.</p>
+<p><strong>Adding weapons:</strong> Drag a weapon item from the library or an inventory list onto the NPC's Actions to add a weapon entry. After dropping, some auto-filled fields may need tidying — right-click a weapon row for options to clean up or remove entries.</p>
+<p><strong>Hit Locations:</strong> Click <strong>Add default Strike Locations</strong> on the NPC's Locations tab to populate a standard humanoid hit-location table. The button warns before overwriting any existing custom data.</p>
+<p><strong>Armor refresh:</strong> After equipping armor items, click <strong>Refresh Armor Values</strong> to push the armor stats into the Strike Location table.</p>
+<p><strong>Shorthand IDs:</strong> Each location row has a short <strong>Loc</strong> code which is used to apply worn armor correctly. You can also enable <strong>Manual Override</strong> per row to lock a value against global refreshes.</p>
+<p><strong>Importing NPC data:</strong> NPC stat blocks can be imported from HarnMaster source modules. Be aware that HarnMaster source files do not use a consistent format across products, so imported values may land in the wrong fields or be missing entirely. Always review an imported NPC's attributes, skills, and weapon entries before use and correct any discrepancies manually.</p>
+<h3 id="encounters">Encounters<a class="headerlink" href="#encounters" title="Permanent link">&para;</a></h3>
+<p>Build encounters from the <strong>Encounters</strong> module. Drag NPC entries into an encounter, then push the encounter to the Combat Tracker with one click when the players engage.</p>
+<h3 id="gm-options">GM Options<a class="headerlink" href="#gm-options" title="Permanent link">&para;</a></h3>
+<p>Under <strong>Settings → Options → HarnMaster Rules</strong>, several optional rules can be toggled:</p>
+<table>
+<thead>
+<tr>
+<th>Option</th>
+<th>Effect</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Combat: Knockbacks</strong></td>
+<td>Enables knockback rolls on high-impact hits</td>
+</tr>
+<tr>
+<td><strong>Combat: Limb injuries</strong></td>
+<td>Tracks limb-specific injury effects (unusable limbs)</td>
+</tr>
+<tr>
+<td><strong>Combat: Amputations</strong></td>
+<td>Enables amputation outcomes for grievous limb hits</td>
+</tr>
+<tr>
+<td><strong>Combat: Bleeders</strong></td>
+<td>Adds ongoing blood-loss tracking for grievous wounds</td>
+</tr>
+</tbody>
+</table>
+<p>These options are off by default. Enable them at campaign start for a grittier game.</p>
+<hr />
+<h2 id="reference">Reference<a class="headerlink" href="#reference" title="Permanent link">&para;</a></h2>
+<h3 id="attribute-quick-reference">Attribute Quick Reference<a class="headerlink" href="#attribute-quick-reference" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Abbr.</th>
+<th>Full Name</th>
+<th>Primary Uses</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>AGL</td>
+<td>Agility</td>
+<td>Physical skills, dodge, initiative</td>
+</tr>
+<tr>
+<td>AUR</td>
+<td>Aura</td>
+<td>Convocation magic, piety</td>
+</tr>
+<tr>
+<td>CML</td>
+<td>Comeliness</td>
+<td>Social interactions</td>
+</tr>
+<tr>
+<td>DEX</td>
+<td>Dexterity</td>
+<td>Fine motor skills, craft</td>
+</tr>
+<tr>
+<td>END</td>
+<td>Endurance</td>
+<td>Fatigue resistance, condition</td>
+</tr>
+<tr>
+<td>EYE</td>
+<td>Eyesight</td>
+<td>Awareness, ranged combat</td>
+</tr>
+<tr>
+<td>HRG</td>
+<td>Hearing</td>
+<td>Awareness</td>
+</tr>
+<tr>
+<td>INT</td>
+<td>Intelligence</td>
+<td>Lore, languages, mental skills</td>
+</tr>
+<tr>
+<td>MOR</td>
+<td>Morality</td>
+<td>Piety, religion skills</td>
+</tr>
+<tr>
+<td>MOV</td>
+<td>Move</td>
+<td>Speed, travel rate</td>
+</tr>
+<tr>
+<td>SML</td>
+<td>Smell</td>
+<td>Awareness</td>
+</tr>
+<tr>
+<td>STA</td>
+<td>Stamina</td>
+<td>Health, shock resistance</td>
+</tr>
+<tr>
+<td>STR</td>
+<td>Strength</td>
+<td>Melee damage, carry weight</td>
+</tr>
+<tr>
+<td>VOI</td>
+<td>Voice</td>
+<td>Communication skills</td>
+</tr>
+<tr>
+<td>WIL</td>
+<td>Will</td>
+<td>Mental conflict, magic resistance</td>
+</tr>
+</tbody>
+</table>
+<h3 id="skill-groups">Skill Groups<a class="headerlink" href="#skill-groups" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Group</th>
+<th>Example Skills</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Physical</td>
+<td>Acrobatics, Climbing, Dodge, Stealth, Swimming</td>
+</tr>
+<tr>
+<td>Communication</td>
+<td>Acting, Intrigue, Oratory, Rhetoric, Singing</td>
+</tr>
+<tr>
+<td>Language</td>
+<td>Harnic, Ivinian, Jarinese, Orbaalese, and 20+ others</td>
+</tr>
+<tr>
+<td>Religion</td>
+<td>Piety skills per deity</td>
+</tr>
+<tr>
+<td>Combat</td>
+<td>Axe, Bow, Dagger, Shield, Sword, Unarmed, and others</td>
+</tr>
+<tr>
+<td>Crafts &amp; Lore</td>
+<td>Cookery, Drawing, Fishing, Folklore, Physician</td>
+</tr>
+<tr>
+<td>Convocation</td>
+<td>Fyvria, Jmorvi, Lyahvi, Odivshe, Peleahn, Savorya</td>
+</tr>
+<tr>
+<td>Generic</td>
+<td>Miscellaneous custom skills</td>
+</tr>
+</tbody>
+</table>
+<h3 id="damage-types">Damage Types<a class="headerlink" href="#damage-types" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Code</th>
+<th>Full Name</th>
+<th>Injury Labels (Minor / Serious / Grievous)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>B</td>
+<td>Blunt</td>
+<td>Bruised / Fractured / Crushed</td>
+</tr>
+<tr>
+<td>E</td>
+<td>Edge</td>
+<td>Minor Cut / Serious Cut / Grievous Cut</td>
+</tr>
+<tr>
+<td>P</td>
+<td>Point</td>
+<td>Minor Stab / Serious Stab / Grievous Stab</td>
+</tr>
+<tr>
+<td>F</td>
+<td>Fire</td>
+<td>Minor Burn / Serious Burn / Grievous Burn</td>
+</tr>
+<tr>
+<td><em>(Frost)</em></td>
+<td>Frost</td>
+<td>Minor Frost / Serious Frost / Grievous Frost</td>
+</tr>
+</tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["navigation.tabs", "navigation.sections", "navigation.top", "search.suggest", "search.highlight", "content.code.copy"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.d7400e89.min.js"></script>
+      
+    
+  </body>
+</html>
