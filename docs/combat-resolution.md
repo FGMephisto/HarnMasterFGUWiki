@@ -1,4 +1,4 @@
-# Combat Resolution Utility
+# Combat Resolution
 
 The **Combat Resolution Window (CRW)** is the central interactive hub in Fantasy Grounds Unity for resolving HarnMaster combat. Whenever an attack is made, this window opens automatically for the Game Master, coordinating the attacker's roll, the defender's tactical response, hit location determinations, armor deductions, and injury generation.
 
@@ -89,7 +89,7 @@ When the matrix indicates a successful hit, this panel calculates injury severit
 
 ## 3. Hit Location Grid & Face Sub-Table
 
-The utility includes an interactive body location picker:
+The window includes an interactive body location picker:
 
 * **Automated Roll Selection**: The location determined by the attack roll is automatically highlighted in red.
 * **Manual Override**: The GM can click any location button (e.g., *Skull*, *Thorax*, *Forearm*, *Thigh*) to change the targeted location on the fly; the effective impact and armor values recalculate immediately.

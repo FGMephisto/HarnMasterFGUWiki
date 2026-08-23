@@ -23,7 +23,7 @@
    - [Shock Rolls](#shock-rolls)
 5. [Game Master Guide](#game-master-guide)
    - [The Combat Tracker](#the-combat-tracker)
-   - [The Combat Resolution Window](#the-combat-resolution-window)
+   - [Combat Resolution](combat-resolution.md)
    - [NPCs](#npcs)
    - [Encounters](#encounters)
    - [GM Options](#gm-options)
@@ -344,11 +344,20 @@ Key HarnMaster features on the Combat Tracker:
 - **Injuries**: Summary of active wounds and current penalty total
 - **Fatigue (FT)**: Inline fatigue tracking
 
-### The Combat Resolution Window
+**Running combat from the Combat Tracker:**
 
-The **Combat Resolution Window** opens automatically when an attack is made. It compares the attacker's roll with the defender's reaction, determines the hit location, subtracts armor protection, and applies injuries.
+- **Set initiative**: Set initiative and sort the tracker list.
+- **Select active combatant**: Click their token or tracker entry to activate.
+- **Target opponent**: Drag the target crosshair to link attacker to defender.
+- **Roll directly**: Use weapon buttons on the CT entry to roll attack and damage directly without opening the full sheet.
 
-For complete documentation on this interface, see the [Combat Resolution Utility guide](combat-resolution.md).
+---
+
+### Combat Resolution
+
+Combat interactions (attack vs. defense, hit location determination, armor mitigation, and injury generation) are resolved using the dedicated **Combat Resolution Window**.
+
+👉 **For complete details and a step-by-step walkthrough, see the [Combat Resolution](combat-resolution.md) guide.**
 
 ### NPCs
 

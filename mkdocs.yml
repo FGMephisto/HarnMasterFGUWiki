@@ -54,4 +54,4 @@ markdown_extensions:
 nav:
   - Home: index.md
   - User Manual: user-manual.md
-  - Combat Resolution Utility: combat-resolution.md
+  - Combat Resolution: combat-resolution.md
