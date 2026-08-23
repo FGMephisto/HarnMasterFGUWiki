@@ -4,6 +4,7 @@
 
 1. [Introduction](#introduction)
 2. [The Character Sheet](#the-character-sheet)
+   - [Skills Tab — Attributes](#skills-tab-attributes)
    - [Skills Tab](#skills-tab)
    - [Mystic Tab — Magic & Powers](#mystic-tab-magic-powers)
    - [Inventory Tab](#inventory-tab)
@@ -13,14 +14,16 @@
    - [Actions Tab — Weapons](#actions-tab-weapons)
    - [GM Tab — Background](#gm-tab-background)
 3. [Making Rolls](#making-rolls)
+   - [The Modifier Box](#the-modifier-box)
 4. [Combat](#combat)
    - [Initiative](#initiative)
    - [Attack](#attack)
    - [Defense](#defense)
    - [Damage](#damage)
-   - [The Combat Resolution Window](#the-combat-resolution-window)
+   - [Shock Rolls](#shock-rolls)
 5. [Game Master Guide](#game-master-guide)
    - [The Combat Tracker](#the-combat-tracker)
+   - [The Combat Resolution Window](#the-combat-resolution-window)
    - [NPCs](#npcs)
    - [Encounters](#encounters)
    - [GM Options](#gm-options)
@@ -42,7 +45,7 @@ This manual covers the Fantasy Grounds Unity implementation of **HarnMaster 3.5E
 The character sheet has six tabs:
 
 | Tab | Contents |
-|-----|----------|
+|---|---|
 | **Skills** | All attributes and skills, ML, SB, development |
 | **Actions** | Weapons and their attack/defense/damage actions |
 | **Combat** | Armor worn, penalty summary |
@@ -106,28 +109,29 @@ The detailed window also has a **Development Roll** button per row (the dice ico
 
 ### Mystic Tab — Magic & Powers {#mystic-tab-magic-powers}
 
-**This is still under development**
+> *Note: Mystic powers and spellcasting features are currently in active development.*
 
-The Mystic tab (labelled **Mystic** in the tab bar) contains the character's magical abilities. HarnMaster magic is convocation-based; the six convocations are:
+The Mystic tab contains the character's magical abilities. HarnMaster magic is convocation-based:
 
 | Convocation | Element |
 |---|---|
-| Fyvria | Earth / Nature |
-| Jmorvi | Metal / Craft |
-| Lyahvi | Light / Illusion |
-| Odivshe | Water / Cold |
-| Peleahn | Fire / Energy |
-| Savorya | Mind / Spirit |
+| **Fyvria** | Earth / Nature |
+| **Jmorvi** | Metal / Craft |
+| **Lyahvi** | Light / Illusion |
+| **Odivshe** | Water / Cold |
+| **Peleahn** | Fire / Energy |
+| **Savorya** | Mind / Spirit |
 
-Each spell entry shows:
-- **Name**
-- **Convocation**
-- **Complexity Level**
-- **Casting Time**
-- **Range / Area**
-- **Duration**
-- **Summary** — short description
-- **Description** / **Bonus Effects** — full text
+Each spell entry displays:
+
+- **Name** — Title of the spell
+- **Convocation** — Spell convocation
+- **Complexity Level** — Casting difficulty rating
+- **Casting Time** — Action duration
+- **Range / Area** — Distance and area of effect
+- **Duration** — How long the effect lasts
+- **Summary** — Short description
+- **Description / Bonus Effects** — Full spell rules and enhancements
 
 Click a spell to cast it (rolls the appropriate convocation skill). Fatigue cost is tracked automatically.
 
@@ -135,10 +139,11 @@ Click a spell to cast it (rolls the appropriate convocation skill). Fatigue cost
 
 ### Inventory Tab {#inventory-tab}
 
-The Inventory tab lists all items carried. Key columns:
-- **WT** — item weight
-- **WQ** — weapon quality (for weapons in inventory)
-- Encumbrance totals at the bottom update the **Penalty** field, which feeds into the Universal Penalty.
+The Inventory tab lists all items carried. Key fields:
+
+- **WT** — Item weight
+- **WQ** — Weapon Quality (for weapons in inventory)
+- **Penalty** — Encumbrance penalty calculated from total carried weight (feeds into Universal Penalty)
 
 Drag an item into the list to add it. Check the **Equipped** box to mark worn armor — equipped armor feeds its protection values into the strike location armor table automatically.
 
@@ -146,19 +151,17 @@ Drag an item into the list to add it. Check the **Equipped** box to mark worn ar
 
 ### Combat Tab — Armor & Penalties {#combat-tab-armor-penalties}
 
-The Combat tab summarizes three things:
+The Combat tab summarizes three key systems:
 
-**Strike location armor** — the strike location table showing B/E/P/F protection values per body location. See [Combat Tab — Strike Locations](#combat-tab-strike-locations) below for the full reference.
-
-**Penalties list** — a summary of active injury penalties feeding into Universal Penalty and Physical Penalty on the main tab.
-
-**Injury list** — all current injuries. See [Combat Tab — Injuries](#combat-tab-injuries) below for the full field reference.
+1. **Strike location armor** — The strike location table showing B/E/P/F protection values per body location. See [Combat Tab — Strike Locations](#combat-tab-strike-locations) below.
+2. **Penalties list** — A summary of active injury penalties feeding into Universal Penalty and Physical Penalty.
+3. **Injury list** — All current wounds. See [Combat Tab — Injuries](#combat-tab-injuries) below.
 
 ---
 
 ### Combat Tab — Injuries {#combat-tab-injuries}
 
-Injuries are listed as a sub-panel on the Combat tab. Click the **Details** button on any injury row to open a popup window with the full injury record. Each injury row records:
+Injuries are listed as a sub-panel on the Combat tab. Click the **Details** button on any injury row to open the full injury record:
 
 | Field | Meaning |
 |---|---|
@@ -167,189 +170,167 @@ Injuries are listed as a sub-panel on the Combat tab. Click the **Details** butt
 | **IL (Injury Level)** | Minor, Serious, or Grievous |
 | **HR (Healing Rate)** | Days per healing step |
 | **Date** | In-game date the injury was received |
-| **Notes** | Free text |
+| **Notes** | Free-text notes |
 
-The injury aspect and level determine the flavour text automatically (e.g., Blunt + Minor = *Bruised*, Edge + Grievous = *Grievous Cut*). Amputations are tracked separately with their own label.
+The injury aspect and level determine the descriptive label automatically (e.g., Blunt + Minor = *Bruised*, Edge + Grievous = *Grievous Cut*).
 
-**Bloodloss** appears as a special injury entry when a bleeding wound is active (requires the Bleeders GM option).
-
-Penalties update automatically as injuries are added, removed, or healed. The **Universal Penalty** and **Physical Penalty** on the main tab reflect the current total.
-
-**Healing:** Update the **Healing Rate (HR)** field and advance the **Date** when a healing interval passes. Setting an HR value indicates the wound has been treated by a physician.
-
-**Bloodloss (Bleeders option):** When active, a Bleeders injury entry appears automatically for grievous wounds.
-
-**Amputations:** When the GM option is enabled, certain wound results can trigger amputation. The location is marked **severed** or **unusable** and a condition note is added.
+- **Penalties**: Update automatically as injuries are added, removed, or healed.
+- **Healing**: Update the **Healing Rate (HR)** field and advance the **Date** when a healing interval passes.
+- **Bloodloss (Bleeders Option)**: When active, a Bleeders injury entry appears automatically for grievous wounds.
+- **Amputations**: When enabled, severe hits can trigger amputation conditions.
 
 ---
 
 ### Combat Tab — Strike Locations {#combat-tab-strike-locations}
 
-This tab shows the character's body map — all named strike locations with their armor values.
+This tab shows the character's body map — all named strike locations with their armor values:
 
 | Column | Meaning |
 |---|---|
 | **Strike Locations** | Body location name (Skull, Face, Neck, Thorax, etc.) |
-| **B / E / P / F** | Armor protection at that location by damage type |
+| **B / E / P / F** | Armor protection at that location for Blunt, Edge, Point, and Fire |
 
-During combat resolution, the system rolls on this table (or a High/Low sub-table when an aim zone is active) to determine where a successful hit lands.
+During combat resolution, the system rolls on this table (or a High/Low sub-table when an aim zone is active) to determine where a hit lands.
 
 ---
 
 ### Actions Tab — Weapons {#actions-tab-weapons}
 
-The Actions tab is the primary interface for combat. Each weapon entry shows its attack and defense actions.
+The Actions tab is the primary interface for combat rolls.
 
-#### Weapon List
+#### Weapon Row Controls
 
-Each weapon entry displays:
-- **Name** — weapon or attack name (underlined; click to rename)
-- **Attack (sword icon)** — click to make an attack roll; shows current **AML**
-- **Defend (shield icon)** — click to make a defense roll; shows current **DML**
-- **Damage (fist icon)** — click to roll damage; shows the **B/E/P** dice for the active aspect
-- **Damage Aspect icon** — cycles between Blunt, Edge, and Point to select which damage column is active
-- **Aim Zone toggle** — cycles between **High**, **Mid** (default), and **Low** to set where the attack is aimed
+| Control | Function |
+|---|---|
+| **Name** | Weapon or attack name (underlined; click to rename) |
+| **Attack (Sword icon)** | Click to make an attack roll; shows current **AML** |
+| **Defend (Shield icon)** | Click to make a defense roll; shows current **DML** |
+| **Damage (Fist icon)** | Click to roll damage; shows dice for the active aspect |
+| **Damage Aspect** | Cycles between **Blunt**, **Edge**, and **Point** |
+| **Aim Zone** | Cycles between **High**, **Mid** (default), and **Low** |
+| **Range Bracket** | Current range band (*Short*, *Medium*, *Long*, *Extreme*) for ranged/thrown weapons |
+| **Ammo Counter** | Tracks remaining ammunition with a pip display |
 
-For ranged and thrown weapons, the row also shows:
-- **Range bracket** — current range band (Short / Medium / Long / Extreme)
-- **Ammo counter** — tracks remaining ammunition with a pip display; set maximum ammo in the field next to it
+#### Weapon Editor (Detail Popup)
 
-#### Weapon Editor
+Click the **detail button** (grid icon, right side of each weapon row) to configure weapon stats:
 
-Click the **detail button** (grid icon, right side of each weapon row) to open the weapon editor. This is where you configure a weapon's statistics:
-
-**Stats section**
-- **Weapon** — display name
-- **WQ / Current** — weapon quality (base) and current condition
-- **Note** — free-text note about this attack entry. Can be usd to denote ammo etc..
-- **Type** — Melee, Ranged, or Thrown
-- **Skill** — the skill name this weapon uses for ML calculation (type to autocomplete from the skill list)
-- **A/D/HM** — three fields: Attack modifier, Defense modifier, Handmode penalty. These are added to the base skill ML to compute AML and DML
-- **B/E/P** — damage dice for Blunt, Edge, and Point aspects
-- **Range S/M/L/E** — range band values in metres (appears for Ranged and Thrown types)
-
-**Properties** — free-text field for notes (special qualities, magical properties, etc.)
+| Field | Meaning |
+|---|---|
+| **Weapon** | Display name |
+| **WQ / Current** | Base Weapon Quality and current condition rating |
+| **Note** | Free-text notes (e.g. ammo type, special rules) |
+| **Type** | *Melee*, *Ranged*, or *Thrown* |
+| **Skill** | Base skill used for ML calculation |
+| **A / D / HM** | Attack modifier, Defense modifier, and Handmode penalty |
+| **B / E / P** | Base damage dice for Blunt, Edge, and Point aspects |
+| **Range S/M/L/E** | Range thresholds in metres |
+| **Properties** | Notes on special qualities or magical attributes |
 
 #### Adding Attack Entries
 
 Right-click in the weapon list and choose:
-- **Add Melee** — adds a melee attack entry
-- **Add Ranged** — adds a ranged attack entry
-- **Add Throwing** — adds a thrown weapon entry
+
+- **Add Melee** — Adds a melee weapon entry
+- **Add Ranged** — Adds a ranged weapon entry
+- **Add Throwing** — Adds a thrown weapon entry
 
 ---
 
 ### GM Tab — Background {#gm-tab-background}
 
-The GM tab is visible only to the GM and contains biographical information:
-- Birthdate, Sunsign, Sunsign (Cusp)
-- Species, Gender
-- Height, Frame, Weight
-- Hair Color, Eye Color, Voice
-- Culture, Social Class
-- Speed (calculated from MOV)
+The GM tab is visible only to the GM and tracks character background:
 
-The **Sunsign** fields matter mechanically — sunsign bonuses appear in the Skills tab against skills that have sunsign affinity.
+- **Birthdate**, **Sunsign**, **Sunsign (Cusp)**
+- **Species**, **Gender**
+- **Height**, **Frame**, **Weight**
+- **Hair Color**, **Eye Color**, **Voice**
+- **Culture**, **Social Class**
+- **Speed** (calculated from MOV)
+
+Sunsign affinities automatically grant bonuses to matching skills on the Skills tab.
 
 ---
 
 ## Making Rolls
 
-All rolls in this ruleset follow the same pattern: roll percentile (d100) and compare to the target number. The system reports one of four outcomes:
+All rolls in HarnMaster follow a percentile (d100) test compared against the target Mastery Level (ML):
 
 | Result | Meaning |
 |---|---|
-| **Critical Success (CS)** | Roll ≤ ML ending with a five (5) or zero
-| **Marginal Success (MS)** | Roll ≤ ML or Roll ≤ 5 |
-| **Marginal Failure (MF)** | Roll > ML or Roll > 96 |
-| **Critical Failure (CF)** | Roll > ML or Roll > 96, ending with a five (5) or zero |
+| **Critical Success (CS)** | Roll ≤ ML ending in 5 or 0 |
+| **Marginal Success (MS)** | Roll ≤ ML (or natural 01–05) |
+| **Marginal Failure (MF)** | Roll > ML (or natural 96–00) |
+| **Critical Failure (CF)** | Roll > ML ending in 5 or 0 |
 
-To roll:
-- **Attribute check:** click the roll button next to an attribute on the Skills tab
-- **Skill check:** click the roll button on the Skills tab
-- **Attack:** click the sword button on the Actions tab (or drag it to a target)
-- **Defense:** click the shield button (or use the prompt that appears after an incoming attack)
-- **Damage:** click the fist/damage button
+How to roll:
 
-The **chat window** shows the full breakdown: the roll, the target (ML), any modifiers, and the outcome label.
+- **Attribute check**: Click the roll button next to an attribute on the Skills tab
+- **Skill check**: Click the roll button on the Skills tab
+- **Attack**: Click the sword button on the Actions tab
+- **Defense**: Click the shield button
+- **Damage**: Click the damage button
 
 ### The Modifier Box
 
-The **Modifier Box** is a floating panel on the FGU desktop (bottom-centre by default). It lets you stack bonuses and presets onto the next roll before you click anything on the character sheet. Modifiers clear automatically after each roll.
+The **Modifier Box** is a floating desktop panel that applies situational modifiers to the next roll:
 
-**Numeric modifier:** Type a positive or negative number into the box to add a flat bonus or penalty to the roll target.
+- **Numeric modifier**: Type any number to add a flat bonus or penalty.
+- **SB Multipliers (×2 through ×7)**: Multiplies Skill Base for difficulty scaling:
 
-**Preset buttons — SB Multiplier (×2 through ×7):**
-
-HarnMaster skill and attribute checks are resolved by comparing a d100 roll against a target derived from the character's Skill Base. The default multiplier is **×5** (ML = SB × 5 + development). Activate one of the MULT presets *before* rolling to change this:
-
-| Preset | Effect on skill/attribute check |
+| Preset | Target Difficulty |
 |---|---|
-| **×2** | Target = SB × 2 (very hard task) |
-| **×3** | Target = SB × 3 (hard task) |
-| **×4** | Target = SB × 4 (moderate task) |
-| **×5** | Target = SB × 5 — **default** (standard task) |
-| **×6** | Target = SB × 6 (easy task) |
-| **×7** | Target = SB × 7 (trivial task) |
+| **×2** | Target = SB × 2 (Very Hard) |
+| **×3** | Target = SB × 3 (Hard) |
+| **×4** | Target = SB × 4 (Moderate) |
+| **×5** | Target = SB × 5 — **Default** (Standard) |
+| **×6** | Target = SB × 6 (Easy) |
+| **×7** | Target = SB × 7 (Trivial) |
 
-For **damage rolls**, the same MULT presets multiply the number of dice in the roll: ×2 adds a second set of the weapon's damage dice to the pool (e.g., a 1d6 weapon rolls 2d6), ×3 adds a third set, and so on. All dice are rolled together in a single roll. Use this for mounted charges, special manoeuvres, or other rules that call for multiplied damage.
+For **damage rolls**, multiplier buttons multiply the number of damage dice rolled together.
 
 ---
 
 ## Combat
 
-HarnMaster combat in Fantasy Grounds is a three-step sequence per exchange: **Attack → Defense → Damage**. The results of all three are held and then resolved together in the **Combat Resolution Window**.
+Combat resolves in three distinct steps: **Attack → Defense → Damage**.
 
 ### Initiative
 
-Before combat begins, set initiative for all participants.
-
-- Right-click a combatant in the **Combat Tracker** and choose **Set Initiative**.
-- **Set All Initiatives** rolls initiative for everyone at once.
-- **Set NPC Initiatives** / **Set PC Initiatives** roll only for the selected group.
-
-Initiative is derived from the character's initiative skill and relevant modifiers.
-Initiative can also be set manually per combatant in the Initiative field.
+- Right-click a combatant in the **Combat Tracker** and select **Set Initiative**.
+- Use **Set All Initiatives**, **Set NPC Initiatives**, or **Set PC Initiatives**.
 
 ### Attack
 
-1. On the attacker's Actions tab, click the **sword button** next to the weapon to use.
-2. The roll is sent to chat showing the AML, the d100 result, and the outcome (CS/MS/MF/CF).
-3. If an attack target is set in the Combat Tracker, the result is automatically associated with that defender.
-
-**Aim Zone:** Before attacking, click the aim zone toggle on the weapon row to choose **High**, **Mid**, or **Low**. This shifts the hit location table used during resolution.
+1. Click the **sword button** on the Actions tab.
+2. The attack roll posts to chat with the AML, d100 roll, and outcome (CS/MS/MF/CF).
+3. Set the **Aim Zone** (High, Mid, Low) prior to rolling if targeting specific body regions.
 
 ### Defense
 
-After an attack lands, the defender is prompted to choose a defense action:
+The defender responds by choosing one of four tactical actions:
 
 | Defense | Effect |
 |---|---|
-| **Block** | Roll DML; success reduces or cancels the attacker's success |
-| **Counterstrike** | Roll an attack in return; both results are compared simultaneously |
-| **Dodge** | Roll AGL-based dodge skill; success avoids the attack |
-| **Ignore** | No defense roll; attack resolves at full effectiveness |
-
-The defense roll result (CS/MS/MF/CF) is held alongside the attack result.
+| **Block** | Uses weapon/shield defense ML to deflect the attack |
+| **Counterstrike** | Attacks in return; both rolls resolve simultaneously |
+| **Dodge** | Uses Agility-based dodge to evade |
+| **Ignore** | Takes no action; attack resolves at maximum effectiveness |
 
 ### Damage
 
-After the defense resolves, the attacker rolls damage by clicking the **damage button**. Damage is rolled according to the active aspect (B/E/P) displayed on the weapon row.
+The attacker rolls damage via the **damage button** according to the active aspect (Blunt, Edge, Point).
 
 ### Shock Rolls
 
-A shock roll is triggered automatically when a character takes a new injury. The status effects applied depend on the current state and roll outcome:
+Taking an injury automatically triggers a Shock Roll:
 
-| Current state | Roll outcome | Result |
+| Current State | Roll Outcome | Resulting State |
 |---|---|---|
-| Normal | Fail | → **Unconscious** + **Prone** |
-| Unconscious (per-turn reroll) | Pass | → **Incapacitated** + immediate second shock check |
-| Incapacitated (second check) | Fail | → **Shock** |
-| Incapacitated (second check) | Pass | → Conditions removed (recovered) |
-
-NPCs in the **Unconscious** state roll automatically at the start of their turn. For PCs all shock rolls are manual; the roll label in chat adapts to the current state so the player knows what they are rolling for.
-
-**Shock** is a persistent condition. The character cannot act offensively; any attack against them resolves as if they chose Ignore. Recovery requires physician care outside combat.
+| **Normal** | Fail | → **Unconscious** + **Prone** |
+| **Unconscious** | Pass | → **Incapacitated** + immediate second check |
+| **Incapacitated** | Fail | → **Shock** |
+| **Incapacitated** | Pass | → Conditions removed (Recovered) |
 
 ---
 
@@ -357,68 +338,43 @@ NPCs in the **Unconscious** state roll automatically at the start of their turn.
 
 ### The Combat Tracker
 
-Open the Combat Tracker from the toolbar. Key HarnMaster additions:
+Key HarnMaster features on the Combat Tracker:
 
-- **Locations** — each combatant's strike location table is accessible from their CT entry
-- **Injuries** — a compact injury list is visible without opening the full character sheet
-- **FT (Fatigue)** — shown inline for quick reference
-
-**Running combat from the CT:**
-- Set initiative and sort the list.
-- Click a combatant's token to select them as the active attacker.
-- Right-click a target token and choose **Target** to link attacker to defender.
-- Use the weapon buttons on the CT entry to roll attack and damage directly without opening the full sheet.
+- **Locations**: Quick access to strike location tables and current armor values
+- **Injuries**: Summary of active wounds and current penalty total
+- **Fatigue (FT)**: Inline fatigue tracking
 
 ### The Combat Resolution Window
 
-The **Combat Resolution Window** opens for the GM as soon as the attack roll resolves, targeting the defender. It updates progressively as the defense roll and then the damage roll come in. Players see a running summary in chat.
+The **Combat Resolution Window** opens automatically when an attack is made. It compares the attacker's roll with the defender's reaction, determines the hit location, subtracts armor protection, and applies injuries.
 
-The window shows:
-- **Attack Outcome** — the attacker's success level
-- **Defense Action** and **Defender Test** — what the defender chose and their roll result
-- **Result** — the final outcome from the attack/defense matrix (e.g., attacker CS vs. defender Block MF = attacker wins decisively)
-- **Total Impact** — effective damage after armor at the struck location is subtracted
-- **Effective Impact** and **Injury Level** — the resulting IL (Minor / Serious / Grievous / Amputation)
-- **Strike Location** — the location roll result; click to override
-
-The injury is applied to the defender's injury list automatically. Penalties update immediately.
+For complete documentation on this interface, see the [Combat Resolution Utility guide](combat-resolution.md).
 
 ### NPCs
 
-Create NPCs from **NPCs** in the sidebar. The NPC main tab is divided into four panels stacked vertically: a summary header, an attributes grid, a skills field, and an actions list.
+Create NPCs from the **NPCs** sidebar menu:
 
-**Attributes:** Displayed as a compact grid, identical in structure to the PC sheet. Each row shows the attribute abbreviation and score. Click the roll button to make an attribute check.
-
-**Skills:** A single free-text field labelled **Skills**. Type skill names and their ML values directly (e.g. `Sword 65, Riding 42`). The field supports multi-roll — clicking a skill name or value in the rendered text opens a roll prompt for that skill, so the GM can roll directly from the field without opening a separate window.
-
-**Actions:** A list of free-text action entries under the **ACTIONS** header. Each entry has a bold **name** line and a free-text **description** block below it. Use the **+** button (top-right of the header) to add a new entry; use the edit (pencil) button to enter delete mode. Actions are narrative — they do not link to the structured weapon system used by PCs. For weapon attacks on NPCs, add weapon entries via drag-and-drop as described below.
-
-**Adding weapons:** Drag a weapon item from the library or an inventory list onto the NPC's Actions to add a weapon entry. After dropping, some auto-filled fields may need tidying — right-click a weapon row for options to clean up or remove entries.
-
-**Hit Locations:** Click **Add default Strike Locations** on the NPC's Locations tab to populate a standard humanoid hit-location table. The button warns before overwriting any existing custom data.
-
-**Armor refresh:** After equipping armor items, click **Refresh Armor Values** to push the armor stats into the Strike Location table.
-
-**Shorthand IDs:** Each location row has a short **Loc** code which is used to apply worn armor correctly. You can also enable **Manual Override** per row to lock a value against global refreshes.
-
-**Importing NPC data:** NPC stat blocks can be imported from HarnMaster source modules. Be aware that HarnMaster source files do not use a consistent format across products, so imported values may land in the wrong fields or be missing entirely. Always review an imported NPC's attributes, skills, and weapon entries before use and correct any discrepancies manually.
+- **Attributes**: Compact grid identical to PC sheets
+- **Skills**: Free-text multi-roll field (e.g. `Sword 65, Riding 42`)
+- **Actions**: Narrative actions and abilities list
+- **Weapons**: Drag and drop weapon items directly into the Actions section
+- **Hit Locations**: Click **Add default Strike Locations** to populate humanoid location tables
+- **Armor Values**: Click **Refresh Armor Values** after equipping armor
 
 ### Encounters
 
-Build encounters from the **Encounters** module. Drag NPC entries into an encounter, then push the encounter to the Combat Tracker with one click when the players engage.
+Build encounters in the **Encounters** module and push them directly to the Combat Tracker when combat begins.
 
 ### GM Options
 
-Under **Settings → Options → HarnMaster Rules**, several optional rules can be toggled:
+Under **Settings → Options → HarnMaster Rules**:
 
 | Option | Effect |
 |---|---|
-| **Combat: Knockbacks** | Enables knockback rolls on high-impact hits |
-| **Combat: Limb injuries** | Tracks limb-specific injury effects (unusable limbs) |
-| **Combat: Amputations** | Enables amputation outcomes for grievous limb hits |
-| **Combat: Bleeders** | Adds ongoing blood-loss tracking for grievous wounds |
-
-These options are off by default. Enable them at campaign start for a grittier game.
+| **Combat: Knockbacks** | Enables knockback rolls on heavy impact hits |
+| **Combat: Limb injuries** | Tracks unusable limb conditions |
+| **Combat: Amputations** | Enables amputation outcomes on grievous limb wounds |
+| **Combat: Bleeders** | Adds blood-loss tracking for severe wounds |
 
 ---
 
@@ -428,41 +384,41 @@ These options are off by default. Enable them at campaign start for a grittier g
 
 | Abbr. | Full Name | Primary Uses |
 |---|---|---|
-| AGL | Agility | Physical skills, dodge, initiative |
-| AUR | Aura | Convocation magic, piety |
-| CML | Comeliness | Social interactions |
-| DEX | Dexterity | Fine motor skills, craft |
-| END | Endurance | Fatigue resistance, condition |
-| EYE | Eyesight | Awareness, ranged combat |
-| HRG | Hearing | Awareness |
-| INT | Intelligence | Lore, languages, mental skills |
-| MOR | Morality | Piety, religion skills |
-| MOV | Move | Speed, travel rate |
-| SML | Smell | Awareness |
-| STA | Stamina | Health, shock resistance |
-| STR | Strength | Melee damage, carry weight |
-| VOI | Voice | Communication skills |
-| WIL | Will | Mental conflict, magic resistance |
+| **AGL** | Agility | Physical skills, dodge, initiative |
+| **AUR** | Aura | Convocation magic, piety |
+| **CML** | Comeliness | Social interactions |
+| **DEX** | Dexterity | Fine motor skills, craft |
+| **END** | Endurance | Fatigue resistance, condition |
+| **EYE** | Eyesight | Awareness, ranged combat |
+| **HRG** | Hearing | Awareness |
+| **INT** | Intelligence | Lore, languages, mental skills |
+| **MOR** | Morality | Piety, religion skills |
+| **MOV** | Move | Speed, travel rate |
+| **SML** | Smell | Awareness |
+| **STA** | Stamina | Health, shock resistance |
+| **STR** | Strength | Melee damage, carry weight |
+| **VOI** | Voice | Communication skills |
+| **WIL** | Will | Mental conflict, magic resistance |
 
 ### Skill Groups
 
 | Group | Example Skills |
 |---|---|
-| Physical | Acrobatics, Climbing, Dodge, Stealth, Swimming |
-| Communication | Acting, Intrigue, Oratory, Rhetoric, Singing |
-| Language | Harnic, Ivinian, Jarinese, Orbaalese, and 20+ others |
-| Religion | Piety skills per deity |
-| Combat | Axe, Bow, Dagger, Shield, Sword, Unarmed, and others |
-| Crafts & Lore | Cookery, Drawing, Fishing, Folklore, Physician |
-| Convocation | Fyvria, Jmorvi, Lyahvi, Odivshe, Peleahn, Savorya |
-| Generic | Miscellaneous custom skills |
+| **Physical** | Acrobatics, Climbing, Dodge, Stealth, Swimming |
+| **Communication** | Acting, Intrigue, Oratory, Rhetoric, Singing |
+| **Language** | Harnic, Ivinian, Jarinese, Orbaalese, and 20+ others |
+| **Religion** | Piety skills per deity |
+| **Combat** | Axe, Bow, Dagger, Shield, Sword, Unarmed |
+| **Crafts & Lore** | Cookery, Drawing, Fishing, Folklore, Physician |
+| **Convocation** | Fyvria, Jmorvi, Lyahvi, Odivshe, Peleahn, Savorya |
+| **Generic** | Miscellaneous custom skills |
 
 ### Damage Types
 
 | Code | Full Name | Injury Labels (Minor / Serious / Grievous) |
 |---|---|---|
-| B | Blunt | Bruised / Fractured / Crushed |
-| E | Edge | Minor Cut / Serious Cut / Grievous Cut |
-| P | Point | Minor Stab / Serious Stab / Grievous Stab |
-| F | Fire | Minor Burn / Serious Burn / Grievous Burn |
+| **B** | Blunt | Bruised / Fractured / Crushed |
+| **E** | Edge | Minor Cut / Serious Cut / Grievous Cut |
+| **P** | Point | Minor Stab / Serious Stab / Grievous Stab |
+| **F** | Fire | Minor Burn / Serious Burn / Grievous Burn |
 | *(Frost)* | Frost | Minor Frost / Serious Frost / Grievous Frost |
